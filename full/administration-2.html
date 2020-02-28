@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/favicon.png" />
+<title>XCalibyte</title>
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/font-awesome.min.css" rel="stylesheet" />
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<link href="css/sweetalert.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/sweetalert.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+<div class="main-content solid-bg administration-2-page">
+  <div class="main-wrapper">
+    <div class="container"> 
+      <!-- Navigation header -->
+      <header class="header"> 
+        <!-- Left logo section -->
+        <div class="header-logo"> <a href="login.html" title="XCalibyte"><img src="images/xcal-scan-black.png" title="xcal-scan" alt="xcal-scan" /></a> </div>
+        <div class="head-center header-menu d-flex flex-row align-items-end  justify-content-end">
+          <a href="user-profile.html"><img src="images/icon/user-circle.png" title="Profile" alt="Profile"><span>Admin</span></a>              
+          <a href="login.html" title="Logout"><img src="images/icon/logout-circle.png" title="Logout" alt="Logout" /></a>
+          <a href="contact.html" title="Contact"><img src="images/icon/support-circle.png" title="Contact" alt="Contact" /></a>                                  
+        </div>
+        <div class="clearfix"></div>
+      </header>
+      <section class="main-section"> 
+        <!-- Left sidebar menu -->
+        <button class="left-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <div class="sidebar">          
+          <div class="menu top-menu">
+            <ul>
+              <li> 
+                <a href="new-project.html" title="New Projects"><div class="head-right-icon"><img src="images/icon/new-project-plus.png" title="Project" alt="New Project" /></div><span>New Project</span></a> 
+              </li>
+              <li> 
+                <a href="dashboard.html" title="My Projects"><div class="head-right-icon"><img src="images/icon/my-projects-circle.png" title="Projects" alt="Projects" /></div><span>My Projects</span></a> 
+              </li>
+              <li class="dropdown-sub-menu">        
+                <a href="JavaScript:Void();"><div class="head-right-icon"><img src="images/icon/setting-circle.png" title="Administration" alt="Administration" /></div><span>Administration</span></a>
+                <div class="submenu mt-auto">
+                  <a href="administration-2.html" title="License">License</a>
+                  <a href="user-management.html" title="User Managament">User Managament</a>
+                  <a href="email-server-configuration.html" title="Email Server">Email Configuration</a>
+                </div>
+              </li>            
+              
+            </ul>
+          </div>
+          <!-- Copyright text-->
+          <div class="copyright-sidebar">            
+            <p>Xcalibyte <span>Xcalscan</span> - Version <span>0.1</span></p>
+            <p>Application rights of Xcalibyte.</p>
+            <p>Do not redistribute without authorization.</p>
+          </div>
+        </div>
+        <div class="sidebar-data"> 
+          <!-- Large white box content start-->
+          <div class="middle-content">
+            <div class="inner-container admin-screen">
+             
+                <!-- Main title with icon image-->
+                <div class="signin-form-head text-center"> <img src="images/svg/administration.svg" class="big-icon" alt="administration icon">
+                  <h2>Administration</h2>
+                </div>
+                <div class="box-inner-container">
+                	<div class="license-upload-div administration-2-top administration-2-top3 ">
+                		<div class="box-left">
+                        	<label class="ad-label">License:</label>
+                    </div>
+                    <div class="box-right">
+                    	<div class="license-detail d-flex flex-row justify-content-between">
+                      	<div class="admin-left">
+                          <span>Company Name:</span>
+                          <strong>XC5 Software Tech Limited</strong>
+                        </div>
+                        <div class="admin-center">                          
+                          <div class="admin-center-top">
+                            <span>License Number:</span>
+                            <strong>a8239xiusid29239</strong>
+                          </div>
+                          <div class="admin-center-bottom">
+                            <span>Expires:  </span><strong>31/12/2020</strong>
+                          </div>                          
+                        </div>
+                        <div class="admin-right">                         
+                         <button type="submit" title="Update License" class="btn btn-gray btn-update-license text-center">Update License</button>
+                          
+                          <div class="admin-right-bottom">
+                            <span> Users: </span><strong>6/10</strong>
+                          </div>                         
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>                        
+              		</div> 
+                </div>                
+                
+            </div>            
+          </div>
+          <!-- Large white box content end--> 
+        </div>
+        <div class="clearfix"></div>
+      </section>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+document.querySelector('.sweet-5').onclick = function(){
+  swal({
+    title: "Are you sure?",
+    text: "You will not be able to recover this record.",
+    type: "warning",
+    showCancelButton: true,    
+    confirmButtonClass: 'btn-danger',
+    confirmButtonText: 'Yes, delete it!',
+    cancelButtonText: "cancel",
+    closeOnConfirm: false,
+    closeOnCancel: true
+  },
+  function(isConfirm){
+    if (isConfirm){
+      swal({
+        title: "Deleted !",
+        text: "User has been deleted.",
+        type: "success",
+        confirmButtonText: 'ok'
+      });      
+    }
+  });
+};
+
+$(document).ready(function(){ 
+  $('.user-listing').mCustomScrollbar({
+      theme:"dark-3",       
+  });
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="../images/favicon.png" />
+<title>XCalibyte</title>
+<link href="../css/bootstrap.css" rel="stylesheet" />
+<link href="../css/font-awesome.min.css" rel="stylesheet" />
+<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<link href="../css/sweetalert.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="../js/sweetalert.js"></script>
+<script type="text/javascript" src="../js/custom.js"></script>
+</head>
+
+<body class="chinese">
+<div class="main-content solid-bg user-management">
+  <div class="main-wrapper">
+    <div class="container"> 
+      <!-- Navigation header -->
+      <header class="header"> 
+        <!-- Left logo section -->
+        <div class="header-logo"> <a href="login.html" title="XCalibyte"><img src="../images/xcalscan-logo-chinese.svg" title="xcal-scan" alt="xcal-scan" /></a> </div>
+        <div class="head-center header-menu d-flex flex-row align-items-end  justify-content-end">
+          <a href="user-profile.html"><img src="../images/icon/user-circle.png" title="Profile" alt="Profile"><span>Admin</span></a>              
+          <a href="login.html" title="Logout"><img src="../images/icon/logout-circle.png" title="Logout" alt="Logout" /></a>
+          <a href="contact.html" title="Contact"><img src="../images/icon/support-circle.png" title="Contact" alt="Contact" /></a>
+        </div>
+        <div class="clearfix"></div>
+      </header>
+      <section class="main-section"> 
+        <!-- Left sidebar menu -->
+        <button class="left-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <div class="sidebar">          
+          <div class="menu top-menu">
+            <ul>
+              <li> 
+                <a href="new-project.html" title="New Projects"><div class="head-right-icon"><img src="../images/icon/new-project-plus.png" title="Projects" alt="New Project" /></div><span>新建项目</span></a> 
+              </li>
+              <li> 
+                <a href="dashboard.html" title="My Projects"><div class="head-right-icon"><img src="../images/icon/my-projects-circle.png" title="Projects" alt="Projects" /></div><span>我的项目</span></a> 
+              </li>
+              <li class="dropdown-sub-menu">        
+                <a href="JavaScript:Void();"><div class="head-right-icon"><img src="../images/icon/setting-circle.png" title="Administration" alt="Administration" /></div><span>管理</span></a>
+                <div class="submenu mt-auto">
+                  <a href="administration-2.html" title="License">证书管理</a>
+                  <a href="user-management.html" title="User Managament">用户管理</a>
+                  <a href="email-server-configuration.html" title="Email Server">邮件设置</a>
+                </div>
+              </li>            
+              
+            </ul>
+          </div>
+          <!-- Copyright text-->
+          <div class="copyright-sidebar">            
+            <p>鉴释 <span>Xcalscan -0.1</span> 版本</p>
+            <p>所有产品权益属于鉴释，</p>
+            <p>如未经许可，请勿擅自复制与转发。</p>
+          </div>
+        </div>
+        <div class="sidebar-data"> 
+          <!-- Large white box content start-->
+          <div class="middle-content">
+            <div class="inner-container admin-screen">
+              <div class="signin-form-head text-center"> <img src="../images/svg/user-management.svg" class="big-icon" alt="administration icon">
+                <h2>用户管理</h2>
+              </div>
+              <div class="box-inner-container user-management-box">
+                <ul class="box-list-head user-management-page">                      
+                  <li>显示名称</li>
+                  <li>用户名</li>
+                  <li>邮件地址</li>
+                  <li>角色</li>
+                  <li>操作</li>
+                </ul>
+                <div class="user-listing-wrap">                      
+                  <div class="box-right">
+                    <div class="user-listing user-listing-scroll">
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Ann</div>
+                        <div class="second-block user-td">Lee</div>
+                        <div class="third-block user-td">ann.lee@xcalibyte.com</div>
+                        <div class="fourth-block user-td"><img src="../images/icon/admin-sign.png" />管理员</div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Jackie</div>
+                        <div class="second-block user-td">Li</div>
+                        <div class="third-block user-td">dexter.chen@xcalibyte.com</div>
+                        <div class="fourth-block user-td"></div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Sun </div>
+                        <div class="second-block user-td">Chew</div>
+                        <div class="third-block user-td">sun.chew@xcalibyte.com</div>
+                        <div class="fourth-block user-td"></div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Administrator</div>
+                        <div class="second-block user-td">Li</div>
+                        <div class="third-block user-td">sys_admin@xcalibyte.com</div>
+                        <div class="fourth-block user-td"> <img src="../images/icon/admin-sign.png" />管理员</div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Jackie</div>
+                        <div class="second-block user-td">Li</div>
+                        <div class="third-block user-td">dexter.chen@xcalibyte.com</div>
+                        <div class="fourth-block user-td"></div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Sun </div>
+                        <div class="second-block user-td">Chew</div>
+                        <div class="third-block user-td">sun.chew@xcalibyte.com</div>
+                        <div class="fourth-block user-td"></div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div> 
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Ann</div>
+                        <div class="second-block user-td">Lee</div>
+                        <div class="third-block user-td">ann.lee@xcalibyte.com</div>
+                        <div class="fourth-block user-td"><img src="../images/icon/admin-sign.png" />管理员</div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Jackie</div>
+                        <div class="second-block user-td">Li</div>
+                        <div class="third-block user-td">dexter.chen@xcalibyte.com</div>
+                        <div class="fourth-block user-td"></div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Sun </div>
+                        <div class="second-block user-td">Chew</div>
+                        <div class="third-block user-td">sun.chew@xcalibyte.com</div>
+                        <div class="fourth-block user-td"></div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Ann</div>
+                        <div class="second-block user-td">Lee</div>
+                        <div class="third-block user-td">ann.lee@xcalibyte.com</div>
+                        <div class="fourth-block user-td"><img src="../images/icon/admin-sign.png" />管理员</div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Jackie</div>
+                        <div class="second-block user-td">Li</div>
+                        <div class="third-block user-td">dexter.chen@xcalibyte.com</div>
+                        <div class="fourth-block user-td"></div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="user-info-row d-flex flex-row justify-content-between">
+                        <div class="first-block user-td">Sun </div>
+                        <div class="second-block user-td">Chew</div>
+                        <div class="third-block user-td">sun.chew@xcalibyte.com</div>
+                        <div class="fourth-block user-td"></div>
+                        <div class="fifth-block user-td"><a href="javascript:;" class="sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"><img src="../images/icon/close.png" title="close" alt="close" /> </a><a href="admin-user-profile.html">编辑</a></div>
+                        <div class="clearfix"></div>
+                      </div>                                  
+                    </div>
+                    <div class="table-pagination">
+                      <ul class="pagination justify-content-center">
+                          <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                      <li class="page-item"><a class="page-link" href="#">10</a></li>
+                      <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+                      </ul>
+                      <div class="pagination-selection d-flex align-items-center">
+                        <span>每页显示:</span>                     
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-pegination-value dropdown-toggle" data-toggle="dropdown">
+                            <span>10</span>
+                          </button>
+                          <div class="dropdown-menu scan-dropdown-menu">                                
+                            <a class="dropdown-item red-txt"  href="javascript:void(0)">10</a>  
+                            <a class="dropdown-item" href="javascript:void(0)">20</a>
+                            <a class="dropdown-item" href="javascript:void(0)">30</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="clearfix"></div>                       
+                  <div class="action-button-admin"> 
+                    <button type="reset" title="Reset"  onclick="location.href = 'add-user.html';"  class="btn btn-gray btn-reset btn-add-team-member text-center">添加用户</button> 
+                    <div class="upload-button uploard-team import-team">
+                      <div class="input-file-container"><span class="attech-doc">导入用户</span>
+                        <input type="file" name="attech-doc" size="40" class="input-file" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-invalid="false" />
+                        </div>
+                    </div>
+                    <button type="button" title="Team Template" class="btn-template"><img src="../images/icon/team-template.png" /><span>模板下载</span></button>                  
+                  </div>
+                  
+                </div> 
+              </div>
+            </div>            
+          </div>
+          <!-- Large white box content end--> 
+        </div>
+        <div class="clearfix"></div>
+      </section>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+document.querySelector('.sweet-5').onclick = function(){
+  swal({
+    title: "确认操作？",
+    text: "此操作无法恢复！",
+    //type: "warning",
+    showCancelButton: true,   
+    confirmButtonClass: 'btn-danger',
+    confirmButtonText: '是的，删除！',    
+    cancelButtonText: "取消",
+    closeOnConfirm: false,
+    closeOnCancel: true,
+    imageUrl:"https://dev.nexuslink.in/xcalibyte-scan_HTML/full/images/svg/alert-popup.svg"
+  },
+  function(isConfirm){
+    if (isConfirm){      
+      swal({
+        title: "删除 !",
+        text: "用户已删除.",
+        type: "success",
+        confirmButtonText: '好的'
+      });
+    }
+  });
+};
+$(document).ready(function(){
+  $('.user-listing-scroll').mCustomScrollbar({
+      theme:"dark-3", 
+      scrollbarPosition:"outside"      
+  });  
+});
+</script>
+</script>
+</body>
+</html>

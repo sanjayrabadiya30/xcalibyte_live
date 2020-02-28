@@ -1,0 +1,495 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <title>XCalibyte</title>
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/jquery-ui.css" rel="stylesheet">
+  <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.selectionBox.js"></script>
+  <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+  <script type="text/javascript" src="js/jquery.keyframes.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+
+  <!--editor js -->
+  <script type="text/javascript" src="js/ace.js"></script>
+  <script type="text/javascript" src="js/theme-clouds.js"></script>
+  <script type="text/javascript" src="js/mode-less.js"></script>
+
+  <style type="text/css">
+    #editor {
+      position: relative;
+      min-height: 316px;
+    }
+
+    #editor a {
+      display: block;
+      color: #428bca;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-content solid-bg triage-page">
+    <div class="main-wrapper">
+      <!--header-section -->
+      <div class="container">
+        <header class="header">
+          <!-- Left logo section -->
+          <div class="header-logo"> <a href="login.html" title="XCalibyte"><img src="images/xcal-scan-black.png"
+                title="xcal-scan" alt="xcal-scan" /></a> </div>
+          <div class="head-center header-menu d-flex flex-row align-items-end  justify-content-end">
+            <a href="user-profile.html"><img src="images/icon/user-circle.png" title="Profile"
+                alt="Profile"><span>Admin</span></a>
+            <a href="login.html" title="Logout"><img src="images/icon/logout-circle.png" title="Logout"
+                alt="Logout" /></a>
+            <a href="contact.html" title="Contact"><img src="images/icon/support-circle.png" title="Contact"
+                alt="Contact" /></a>
+          </div>
+          <div class="clearfix"></div>
+        </header>
+        <section class="main-section">
+
+          <!-- sidebar navigation -->
+          <button class="left-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          <div class="sidebar">
+            <div class="menu top-menu">
+              <ul>
+                <li>
+                  <a href="new-project.html" title="New Projects">
+                    <div class="head-right-icon"><img src="images/icon/new-project-plus.png" title="Project"
+                        alt="New Project" /></div><span>New Project</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="dashboard.html" title="My Projects">
+                    <div class="head-right-icon"><img src="images/icon/my-projects-circle.png" title="Projects"
+                        alt="Projects" /></div><span>My Projects</span>
+                  </a>
+                </li>
+                <li class="dropdown-sub-menu">
+                  <a href="JavaScript:Void();">
+                    <div class="head-right-icon"><img src="images/icon/setting-circle.png" title="Administration"
+                        alt="Administration" /></div><span>Administration</span>
+                  </a>
+                  <div class="submenu mt-auto">
+                    <a href="administration-2.html" title="License">License</a>
+                    <a href="user-management.html" title="User Managament">User Managament</a>
+                    <a href="email-server-configuration.html" title="Email Server">Email Configuration</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Copyright text-->
+            <div class="copyright-sidebar">
+              <p>Xcalibyte <span>Xcalscan</span> - Version <span>0.1</span></p>
+              <p>Application rights of Xcalibyte.</p>
+              <p>Do not redistribute without authorization.</p>
+            </div>
+          </div>
+
+          <div class="sidebar-data">
+            <div class="scanning-middle-content d-flex flex-row justify-content-between sidebar-layout-2">
+              <div class="organize-top-section  d-flex flex-row justify-content-between flex-wrap">
+                <div class="organize-top d-flex flex-row justify-content-between ">
+                  <div class="scan-leftbox1 organize-leftbox1 d-flex flex-row justify-content-between">
+                    <div class="back-page">
+                      <a href="assign.html"><img src="images/icon/back-circle-gray.png" /> </a>
+                    </div>
+                    <div class="organize-leftbox1-left  ">
+                      <p><strong>ID</strong><span>AWja4c5cWIivbijW--9p</span></p>
+                      <p><strong>FILE : LINE</strong><span>/Users/lkwangus/git/ali/AliOS...stdio.h</span></p>
+                      <div class="d-flex justify-content-between organize-txt-part">
+                        <div class="severity-left">
+                          <p><strong>SEVERITY</strong><span class="red-txt level">HIGH</span></p>
+                          <p><strong>DEFECT TYPE</strong><span>DBZ</span></p>
+                        </div>
+                        <div class="severity-right">
+                          <p><strong>FUNCTION</strong><span>if1A</span></p>
+                          <p><strong>VARIABLE</strong><span class="defect-name">size</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="triage-head-right">
+                      <ul class="d-flex flex-row justify-content-between  flex-wrap">
+                        <li class="triage-action-dropdown"><strong>ACTION</strong>
+                          <div class="input-group  scan-selection triage-dropdown">
+                            <select class="selection-box file-select">
+                              <option value="critical">Critical</option>
+                              <option value="Confirm">Confirmed</option>
+                              <option selected value="False">False Positive</option>
+                              <option value="Waive">Waived</option>
+                            </select>
+                          </div>
+                        </li>
+                        <li class="triage-action-dropdown  scroll-dropdown"><strong>ASSIGN</strong>
+                          <div class="input-group  scan-selection triage-dropdown">
+                            <select class="selection-box file-select">
+                              <option value="admin">Admin</option>
+                              <option selected value="anne_lee">Ann Lee</option>
+                              <option value="dexter_chan">Dexter Chan</option>
+                              <option value="sun_chow">Sun Chow</option>
+                              <option value="admin">Admin</option>
+                              <option value="anne_lee">Ann Lee</option>
+                              <option value="dexter_chan">Dexter Chan</option>
+                              <option value="sun_chow">Sun Chow</option>
+                            </select>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="scan-leftbox2 d-flex flex-row justify-content-around three-meter-triage">
+                    <div class="meterbox">
+                      <span>severity</span>
+                      <div class="meter position-relative">
+                        <img src="images/meter.png" alt="" class="img-fluid meterbg" />
+                        <div class="meter_head_value">
+                          <strong alt="" class="meter-hand hand animated " id="hand_0"></strong>
+                        </div>
+                      </div>
+                      <div class="lightblue-txt speed" id="speed_1">30</div>
+                      <h6 class="lightblue-txt">Low</h6>
+                    </div>
+                    <div class="meterbox">
+                      <span>Likelihood</span>
+                      <div class="meter position-relative">
+                        <img src="images/meter.png" alt="" class="img-fluid meterbg" />
+                        <div class="meter_head_value">
+                          <strong alt="" class="meter-hand hand animated " id="hand_1"></strong>
+                        </div>
+                      </div>
+                      <div class="orange-txt speed" id="speed_2">60</div>
+                      <h6 class="orange-txt">Medium</h6>
+                    </div>
+                    <div class="meterbox">
+                      <span>Remediation Cost</span>
+                      <div class="meter position-relative">
+                        <img src="images/meter.png" alt="" class="img-fluid meterbg" />
+                        <div class="meter_head_value">
+                          <strong alt="" class="meter-hand hand animated " id="hand_2"></strong>
+                        </div>
+                      </div>
+                      <div class="red-txt speed" id="speed_3">140</div>
+                      <h6 class="red-txt">High</h6>
+                    </div>
+                    <!-- Risk count meter-->
+                  </div>
+                </div>
+                <div class="organize-bottom">
+                  <div class="track-path d-flex flex-row justify-content-between">
+                    <div class="track-path-left scanning-left">
+                      <div class="track-path-arrow">
+                        <label>TRACE PATH<a href="javascript:;" class="sort-label up"></a></label>
+                        <div class="pre-next">
+                          <a href="#" title="Previous" class="prev"><img src="images/icon/triage-previous-arrow.png"
+                              title="Previous" alt="Previous" /></a>
+                          <a href="#" title="Next" class="next"><img src="images/icon/triage-next-arrow.png"
+                              title="Next" alt="Next" /></a>
+                        </div>
+                      </div>
+                      <div class="scroll-trace">
+                        <div class="scroll-track-2">
+                          <table class="triage-table ">
+                            <tbody class="scroll-code">
+                              <tr>
+                                <td>1</td>
+                                <td>user_service.rb : 7</td>
+                                <td>Object sensitive analysis</td>
+                              </tr>
+
+
+                              <tr class="selected-row">
+                                <td>2</td>
+                                <td>user_controller.rb : 26</td>
+                                <td>Cross file checking</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>controller/application_controller.rb : 3</td>
+                                <td>Arroy bound checking</td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>project_service.rb : 9</td>
+                                <td>Null pointer dereferences (NPD)</td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>project_service.rb : 15</td>
+                                <td>Fine grained virtual variable for * (p+1)</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>user_service.rb : 7</td>
+                                <td>Object sensitive analysis</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>user_controller.rb : 26</td>
+                                <td>Cross file checking</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>controller/application_controller.rb : 3</td>
+                                <td>Arroy bound checking</td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>project_service.rb : 9</td>
+                                <td>Null pointer dereferences (NPD)</td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>project_service.rb : 15</td>
+                                <td>Fine grained virtual variable for * (p+1)</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Right sidebar data information -->
+              <div class="organize-right">
+                <div class="scanning-right">
+                  <div class="scanning-right-top">
+                    <h6><strong>DESCRIPTION</strong><span class="cert-span">XCALIBYTE <span
+                          class="bluetext">DBZ</span></span></h6>
+                    <p>The program has called a function that cannot be guaranteed to work safely.<br>Certain functions
+                      behave in dangerous ways regardless of how they are used. Functions in this category are often
+                      implemented without taking security concerns into account. The gets() function is unsafe because
+                      it does not perform bounds checking on the size of its input. An attacker can easily send
+                      arbitrarily-sized input to gets() and overflow the destination buffer. Similarly, the >>operator
+                      is unsafe to use when reading into a statically-allocated character array because it does not
+                      perform bounds checking on the size of its input. An attacker can easily send arbitrarily-sized
+                      input to the >>operator and overflow the destination buffer. For more information refer to:
+                      https://LINK</p>
+                  </div>
+                </div>
+                <!-- <a href="scan-results.html"
+                  class=" btn btn-gray back-scan-results-organize d-flex align-items-center justify-content-center"
+                  title="Back to Scan results"><img src="images/icon/left-white.png" alt="Back to Scan results"
+                    title="Back to Scan results"><span>Back to Scan results</span></a> -->
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="scan-info-data">
+              <!-- Tabbing html start-->
+              <div class="tabing-info triage-tab">
+                <div class="single-tab">
+                  <h6>controller/application_controller.rb : 3</h6>
+                  <div class="code scroll-code">
+                    <div id="editor">static void md5_append(md5_state_t* pms, const md5_byte_t* data, size_t nbytes)
+                      {
+                      const md5_byte_t* p = data;
+                      size_t left = nbytes;
+                      size_t offset = (pms->count[0] >>3) %63;
+                      md5_word_t nbits = (md5_word_t)(nbytes <<3); } // create ace editor var editor=ace.edit("editor");
+                        editor.setTheme("ace/theme/eclipse"); editor.getSession().setMode("ace/mode/javascript"); //
+                        create hypersearch instance with reference to callback</span> var
+                        hyper=hyperace.create(editor, 'results' , null, {'load': loaded});
+                        hyper.searchMultiSession=true; // update session info once all sessions are loaded var
+                        sessions=[]; function setSessions() { hyper.setSessions(sessions);
+                        hyper.setSession('sessions.js'); } var i; for (i=0; i < cars.length; i++) { text +=cars[i]
+                        + "<br>" ; } // called when searchbox component finishes loading function loaded () { // add
+                        template(radio buttons) to search panel (personal preference to copy from html rather than
+                        creating in js) $('.ace_search').append($('#appendopt').html()); // remove template from dom so
+                        it does not conflict with search panel
+                        document.getElementById('appendopt').parentNode.removeChild(document.getElementById('appendopt')); //
+                        track radio changes for multi or current search $('[name=hyperwho]').change(function () {
+                        hyper.searchMultiSession=this.id=='hyperall' ; }); editor.focus(); // below we just load files
+                        for this example into the editor sessions for convenience var sessioncount=0; // track for all 3
+                        sessions loaded to create and add sessions $.get('sessions.js', function(data) {
+                        sessions['sessions.js']=editor.getSession(); editor.getSession().setValue(data); sessioncount++;
+                        if (sessioncount==3) setSessions(); }, "text" // recursive if not set ); $.get('index.html',
+                        function(data) { var session=new ace.EditSession(data, { "path" : "ace/mode/xml" });
+                        sessions['index.html']=session; sessioncount++; if (sessioncount==3) setSessions(); });
+                        $.get('style.css', function(data) { var session=new ace.EditSession(data, { "path"
+                        : "ace/mode/css" }); sessions['style.css']=session; sessioncount++; if (sessioncount==3)
+                        setSessions(); }); // end of example file load } // bare bones tab control, changes session and
+                        tab css $('.tabs li a').click(function() { hyper.setSession($(this).attr('id'));
+                        setTab($(this).attr('id')); }); // tab css change function setTab(id) { $('.tabs li
+                        a').each(function () { if(id==$(this).attr('id')) $(this).parent().addClass('on'); else
+                        $(this).parent().removeClass('on'); }); } // update tab css if search result clicked for not
+                        current tab, click will update the session editor.on("changeSession", function(e) {
+                        setTab(hyper.currentSession); }); </div> </div> </div> </div> <!-- Tabbing html end-->
+                    </div>
+
+
+
+                  </div>
+                  <div class="clearfix"></div>
+        </section>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    /* script for custom selection box*/
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/x-code");
+    editor.getSession().setMode("ace/mode/less");
+    editor.setShowFoldWidgets(false);
+    editor.
+
+      $(document).ready(function () {
+        $('.scan-selection select:not(.ignore)').niceSelect();
+        $('.com-top-selection .selection-box').niceSelect();
+      });
+    $(document).ready(function () {
+      $('.scroll-code,.scroll-track-2,.scroll-dropdown ul.list').mCustomScrollbar({
+        theme: "dark-3",
+      });
+
+    });
+
+    $(document).ready(function () {
+      $(".code,.scroll-trace").resizable();
+    });
+
+
+
+    function AnimateRotate(count, no) {
+      $('#hand_' + no).animate({ deg: count }, {
+        duration: 1750,
+        easing: 'linear',
+        step: function (now) {
+          now = count;
+          $(this).css('-webkit-transform', 'rotate(' + (now) + 'deg)');
+        },
+        complete: function () {
+          play('spin', no);
+        }
+      });
+    }
+
+    $(document).ready(function () {
+
+      var arr = [
+        'speed_1',
+        'speed_2',
+        'speed_3'
+      ];
+      $.each(arr, function (index, value) {
+        var count = $('#' + value).text();
+        AnimateRotate(count, index);
+        //alert(count);
+      });
+
+
+
+
+      //play('spin');
+
+    });
+    function play(animation, no) {
+      $('#hand_' + no).resetKeyframe(function () {
+        $('#hand_' + no).playKeyframe({
+          name: 'rotate_arrow' + no,
+          duration: "2s",
+          iterationCount: 1
+        });
+      });
+
+      value = parseInt(no) + parseInt(1);
+
+      count = $('#speed_' + value).text();
+
+      count_2 = parseInt(count) + parseInt(6);
+      count_3 = parseInt(count) - parseInt(6);
+      count_4 = parseInt(count) + parseInt(3);
+      count_5 = parseInt(count) - parseInt(3);
+
+      $.keyframe.define([{
+        name: 'rotate_arrow' + no,
+        '0%': {
+          'transform': 'rotate(' + count + 'deg)',
+          '-webkit-transform': 'rotate(' + count + 'deg)',
+          '-moz-transform': 'rotate(' + count + 'deg)'
+        },
+        '20%': {
+          'transform': 'rotate(' + count_2 + 'deg)',
+          '-webkit-transform': 'rotate(' + count_2 + 'deg)',
+          '-moz-transform': 'rotate(' + count_2 + 'deg)'
+        },
+        '40%': {
+          'transform': 'rotate(' + count_3 + 'deg)',
+          '-webkit-transform': 'rotate(' + count_3 + 'deg)',
+          '-moz-transform': 'rotate(' + count_3 + 'deg)'
+        },
+        '60%': {
+          'transform': 'rotate(' + count_4 + 'deg)',
+          '-webkit-transform': 'rotate(' + count_4 + 'deg)',
+          '-moz-transform': 'rotate(' + count_4 + 'deg)'
+        },
+        '80%': {
+          'transform': 'rotate(' + count_5 + 'deg)',
+          '-webkit-transform': 'rotate(' + count_5 + 'deg)',
+          '-moz-transform': 'rotate(' + count_5 + 'deg)'
+        },
+        '100%': {
+          'transform': 'rotate(' + count + 'deg)',
+          '-webkit-transform': 'rotate(' + count + 'deg)',
+          '-moz-transform': 'rotate(' + count + 'deg)'
+        }
+      }]);
+    }
+
+    $(document).ready(function () {
+      function checkWidth() {
+        var matrix = $(".container").css("-webkit-transform");
+        var translate_val = matrix.match(/-?[\d\.]+/g);
+
+        var windowSize = $(".code").height();
+        var container = $(".container").height();
+        console.log(translate_val);
+        if (translate_val !== null) {
+          var maincontainer =
+            parseFloat(container) * parseFloat(translate_val[0]) + parseFloat(100);
+        } else {
+          var maincontainer = container + parseFloat(100);
+        }
+
+        //console.log(container);
+        //console.log(maincontainer);
+
+        //console.log($(window).height());
+
+        if (windowSize <= 300) {
+          $(".main-wrapper").css("min-height", "100vh");
+        } else if (windowSize >= 300) {
+          if ($(window).height() >= 800) {
+            $(".main-wrapper").css("min-height", maincontainer + "px");
+          } else {
+            $(".main-wrapper").css("min-height", container + "px");
+          }
+        }
+      }
+      checkWidth();
+      $(window).resize(checkWidth);
+    })
+
+  </script>
+
+
+</body>
+
+</html>

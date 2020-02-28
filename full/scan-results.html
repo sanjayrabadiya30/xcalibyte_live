@@ -1,0 +1,2876 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon-black.svg" />
+	<title>XCalibyte</title>
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" />
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	<link href="css/tree-style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style-1.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.selectionBox.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="js/jquery.keyframes.js"></script>
+	<script type="text/javascript" src="js/jstree.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+	<div class="main-content solid-bg">
+		<div class="main-wrapper scan-results-page">
+			<!--header-section -->
+			<div class="container">
+				<header class="header">
+					<!-- Left logo section -->
+					<div class="header-logo"> <a href="login.html" title="XCalibyte"><img
+								src="images/xcal-scan-black.png" title="xcal-scan" alt="xcal-scan" /></a> </div>
+					<div class="head-center header-menu d-flex flex-row align-items-end  justify-content-end">
+						<a href="user-profile.html"><img src="images/icon/user-circle.png" title="Profile"
+								alt="Profile"><span>Admin</span></a>
+						<a href="login.html" title="Logout"><img src="images/icon/logout-circle.png" title="Logout"
+								alt="Logout" /></a>
+						<a href="contact.html" title="Contact"><img src="images/icon/support-circle.png" title="Contact"
+								alt="Contact" /></a>
+					</div>
+					<div class="clearfix"></div>
+				</header>
+				<section class="main-section">
+					<!-- sidebar navigation -->
+					<button class="left-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+					<div class="sidebar">
+						<div class="menu top-menu">
+							<ul>
+								<li>
+									<a href="new-project.html" title="New Projects">
+										<div class="head-right-icon"><img src="images/icon/new-project-plus.png"
+												title="Project" alt="New Project" /></div><span>New Project</span>
+									</a>
+								</li>
+								<li>
+									<a href="dashboard.html" title="My Projects">
+										<div class="head-right-icon"><img src="images/icon/my-projects-circle.png"
+												title="Projects" alt="Projects" /></div><span>My Projects</span>
+									</a>
+								</li>
+								<li class="dropdown-sub-menu">
+									<a href="JavaScript:Void();">
+										<div class="head-right-icon"><img src="images/icon/setting-circle.png"
+												title="Administration" alt="Administration" /></div>
+										<span>Administration</span>
+									</a>
+									<div class="submenu mt-auto">
+										<a href="administration-2.html" title="License">License</a>
+										<a href="user-management.html" title="User Managament">User Managament</a>
+										<a href="email-server-configuration.html" title="Email Server">Email
+											Configuration</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- Copyright text-->
+						<div class="copyright-sidebar">
+							<p>Xcalibyte <span>Xcalscan</span> - Version <span>0.1</span></p>
+							<p>Application rights of Xcalibyte.</p>
+							<p>Do not redistribute without authorization.</p>
+						</div>
+					</div>
+					<div class="sidebar-data">
+						<div class="scanning-middle-content d-flex flex-row justify-content-between ">
+							<div class="scanning-left">
+								<div class="scan-file-part d-flex flex-row justify-content-start">
+									<div class="back-page">
+										<a href="scanning-progress.html"><img src="images/icon/back-circle.png" /> </a>
+									</div>
+									<div class="scan-file-middle">
+										<div class="d-flex flex-row justify-content-between">
+											<div class=" d-flex flex-row align-items-center">
+												<div class="scaning-head-listing project-name-head">
+													<p><strong>Testing_ abc_team...</strong></p>
+													<p><span class="Version-name">Scanned with:</span> Xcalscan <span
+															class="Version-name">Version</span> 0.1</p>
+												</div>
+											</div>
+											<div class=" d-flex flex-row align-items-center">
+												<div class="dropdown view-dropdown">
+													<strong>View</strong>
+													<button type="button" title="no_clickable"
+														class="btn btn-view  dropdown-toggle" data-toggle="dropdown">
+														<span title="no_clickable">All Files</span>
+													</button>
+													<div class="dropdown-menu scan-dropdown-menu view-dropdown-menu">
+														<a class="dropdown-item" href="javascript:void(0)">All Files</a>
+														<a class="dropdown-item" data-toggle="modal"
+															href="#selected_files" href="javascript:void(0)">Selected
+															Files </a>
+													</div>
+												</div>
+
+												<div class="scanning-search">
+													<input class="form-control" type="search" name=""
+														placeholder="SEARCH DEFECT ID  (ALL FILES) ">
+													<button class="btn-search"><img
+															src="images/icon/search-icon.png"></button>
+												</div>
+											</div>
+										</div>
+										<div class="scan-head-bottom d-flex flex-row align-items-center">
+											<div class="scaning-head-listing scan-date-time">
+												<p><strong>Time</strong><span>10:28</span></p>
+												<p><strong>Date</strong><span>06/08/2018</span></p>
+											</div>
+											<div class="scaning-head-listing scan-file-line">
+												<p><strong>Files</strong><span>47</span></p>
+												<p><strong>Lines</strong><span>8932</span></p>
+											</div>
+											<div class="scaning-head-listing scan-time">
+												<p><strong>SCAN TIME</strong></p>
+												<p><span>0:0:58 </span></p>
+											</div>
+											<div class="scaning-head-listing">
+												<div class="scan-results-xcalibyte-dropdown">
+													<div class="dropdown">
+														<span>View by</span>
+														<button type="button" class="dropdown-toggle"
+															id="dropdownMenuLink" data-toggle="dropdown">CERT</button>
+														<div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+															<a class="dropdown-item" data-value="0" href="#">All</a>
+															<a class="dropdown-item" data-value="1" href="#">Xcalibyte</a>
+															<a class="dropdown-item" data-value="2" href="#">CERT</a>
+															<a class="dropdown-item" data-value="3" href="#">embedded iot</a>
+															<a class="dropdown-item" data-value="4" href="#">gdpr</a>
+															<a class="dropdown-item" data-value="5" href="#">OCLint</a>
+															<a class="dropdown-item" data-value="6" href="#">owasp</a>
+															<a class="dropdown-item" data-value="7" href="#">Custom</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="scaning-head-listing scan-date-time ">
+												<p class="gray-txt2"><strong>LAST</strong><span>10:28</span></p>
+												<p class="gray-txt2"><strong>SCAN</strong><span>06/08/2018</span></p>
+											</div>
+											<div class="scaning-head-listing scan-file-line ">
+												<p class="gray-txt2"><strong>Files</strong><span>47</span></p>
+												<p class="gray-txt2"><strong>Lines</strong><span>8932</span></p>
+											</div>
+											<div class="scaning-head-listing chnage-defect-no">
+												<p class="gray-txt2"><strong>DEFECTS</strong><span>352</span></p>
+												<p class="defect-per-select gray-txt2"><strong>CHANGE</strong><span>344
+														(8%)</span><span class="defect-arrow up"></span></p>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="scanning-top-part d-flex flex-row justify-content-between ">
+									<div class="scan-leftbox1 single-meter-box">
+										<div class="meterbox single-meter">
+											<span>Project Risk</span>
+											<div class="meter position-relative">
+												<img src="images/meter.png" alt="" class="img-fluid meterbg" />
+												<div class="meter_head_value">
+													<strong alt="" class="meter-hand hand animated "
+														id="hand_2"></strong>
+												</div>
+											</div>
+											<div class="orange-txt speed" id="speed_2">90</div>
+											<h6 class="orange-txt">Medium</h6>
+										</div>
+									</div>
+									<div class="scan-leftbox3 d-flex flex-row justify-content-between ">
+										<div class="defect-found-value d-flex flex-row flex-wrap">
+											<h6>Defects Found</h6>
+											<h2>300,000</h2>
+										</div>
+										<div class="scan-leftbox3-left d-flex flex-row ">
+											<h6>RISK</h6>
+											<div
+												class="levelbox d-flex flex-row justify-content-center align-items-end">
+												<div class="levellist red-txt"><small>High</small>
+													<div class="value-circle redbg ">4,011</div>
+												</div>
+												<div class="levellist orange-txt"><small>Medium</small>
+													<div class="value-circle orangebg">122,318</div>
+												</div>
+												<div class="levellist bluelight-txt"><small>Low</small>
+													<div class="value-circle bluelightbg">80,211</div>
+												</div>
+											</div>
+										</div>
+										<div class="scan-leftbox3-right d-flex flex-row flex-wrap">
+											<h6>Critical Defects</h6>
+											<div class="critical-value">128,000</div>
+										</div>
+									</div>
+								</div>
+								<!-- Scan result table data start -->
+								<div class="scan-table scan-results">
+									<label class="sort-by">Sort By</label>
+									<table class="table table-fixed">
+										<thead>
+											<tr>
+												<!-- <th class="assign-sorting-circle"><a href="javascript:;" class="sorting-circle redbg" ></a><a href="javascript:;" class="sorting-circle orangebg"></a><a href="javascript:;" class="sorting-circle bluelightbg"></a></th> -->
+												<th><a href="javascript:;" class="sort-label up"></a></th>
+												<th>ID<a href="javascript:;" class="sort-label"></a></th>
+												<th>File<a href="javascript:;" class="sort-label"></a></th>
+												<th>Line</th>
+												<th>Function<a href="javascript:;" class="sort-label"></a></th>
+												<th>Variable<a href="javascript:;" class="sort-label"></a></th>
+												<th>Type<a href="javascript:;" class="sort-label"></a></th>
+
+												<th>Action<a href="javascript:;" class="sort-label"></a></th>
+												<th>Assigned<a href="javascript:;" class="sort-label"></a></th>
+											</tr>
+										</thead>
+										<tbody class="scroll" id="clickable">
+											<tr class="dblclickable">
+												<td class="red-txt"><a href="triage-1.html"
+														class="circle-level-txt redbg" data-toggle="tooltip"
+														data-placement="left" title="Definite">D</a></td>
+												<td><a href="triage-1.html">00001</a></td>
+												<td><a href="triage-1.html"><span>jcontroller</span></a></td>
+												<td><a href="triage-1.html"><span>stdio.h</span></a></td>
+												<td><a href="triage-1.html"><span>if1A</span></a></td>
+												<td><a href="triage-1.html"><span>size</span></a></td>
+												<td><a href="triage-1.html"><span>UAF</span></a></td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">System Account</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_1">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00002</td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry.</span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Jackie Li</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_2">
+														<div class="bar" data-name="SVG Skill" data-percent="50">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00003</td>
+												<td><span>/home/parallels/stx/mastiff/osprey-gcc-4.2.0/gcc/con/m68k/</span>
+												</td>
+												<td><span>fpgnulib.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Unassigned</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_3">
+														<div class="bar" data-name="SVG Skill" data-percent="75">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00004</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Sun Chow</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_4">
+														<div class="bar" data-name="SVG Skill" data-percent="75">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00005</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/middleware/uagent/</span>
+												</td>
+												<td><span>xz_dec_lzma2.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Waived</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Admin</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_5">
+														<div class="bar" data-name="SVG Skill" data-percent="25">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00006</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">False Positive</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Sun Chow</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_6">
+														<div class="bar" data-name="SVG Skill" data-percent="60">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00007</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>aes.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Waived</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Unassigned</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_7">
+														<div class="bar" data-name="SVG Skill" data-percent="70">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00008</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>rand.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Admin</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_8">
+														<div class="bar" data-name="SVG Skill" data-percent="30">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00009</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Waived</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Unassigned</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_9">
+														<div class="bar" data-name="SVG Skill" data-percent="20">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00010</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">False Positive</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Admin</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_10">
+														<div class="bar" data-name="SVG Skill" data-percent="40">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+
+											<tr class="dblclickable">
+												<td class="red-txt"><a href="triage-1.html"
+														class="circle-level-txt redbg" data-toggle="tooltip"
+														data-placement="left" title="Definite">D</a></td>
+												<td><a href="triage-1.html">00001</a></td>
+												<td><a href="triage-1.html"><span>jcontroller</span></a></td>
+												<td><a href="triage-1.html"><span>stdio.h</span></a></td>
+												<td><a href="triage-1.html"><span>if1A</span></a></td>
+												<td><a href="triage-1.html"><span>size</span></a></td>
+												<td><a href="triage-1.html"><span>UAF</span></a></td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">System Account</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_11">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00002</td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry.</span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Jackie Li</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_12">
+														<div class="bar" data-name="SVG Skill" data-percent="50">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00003</td>
+												<td><span>/home/parallels/stx/mastiff/osprey-gcc-4.2.0/gcc/con/m68k/</span>
+												</td>
+												<td><span>fpgnulib.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Unassigned</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_13">
+														<div class="bar" data-name="SVG Skill" data-percent="75">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00004</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Sun Chow</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_14">
+														<div class="bar" data-name="SVG Skill" data-percent="75">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00005</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/middleware/uagent/</span>
+												</td>
+												<td><span>xz_dec_lzma2.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Waived</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Admin</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_15">
+														<div class="bar" data-name="SVG Skill" data-percent="25">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00006</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">False Positive</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Sun Chow</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_16">
+														<div class="bar" data-name="SVG Skill" data-percent="60">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00007</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>aes.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Waived</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Unassigned</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_17">
+														<div class="bar" data-name="SVG Skill" data-percent="70">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00008</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>rand.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Admin</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_18">
+														<div class="bar" data-name="SVG Skill" data-percent="30">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00009</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Waived</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Unassigned</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_19">
+														<div class="bar" data-name="SVG Skill" data-percent="20">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00010</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">False Positive</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Admin</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_20">
+														<div class="bar" data-name="SVG Skill" data-percent="40">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+
+											<tr class="dblclickable">
+												<td class="red-txt"><a href="triage-1.html"
+														class="circle-level-txt redbg" data-toggle="tooltip"
+														data-placement="left" title="Definite">D</a></td>
+												<td><a href="triage-1.html">00001</a></td>
+												<td><a href="triage-1.html"><span>jcontroller</span></a></td>
+												<td><a href="triage-1.html"><span>stdio.h</span></a></td>
+												<td><a href="triage-1.html"><span>if1A</span></a></td>
+												<td><a href="triage-1.html"><span>size</span></a></td>
+												<td><a href="triage-1.html"><span>UAF</span></a></td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">System Account</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_21">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00002</td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry.</span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td><span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. </span></td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Jackie Li</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_22">
+														<div class="bar" data-name="SVG Skill" data-percent="50">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00003</td>
+												<td><span>/home/parallels/stx/mastiff/osprey-gcc-4.2.0/gcc/con/m68k/</span>
+												</td>
+												<td><span>fpgnulib.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Unassigned</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_23">
+														<div class="bar" data-name="SVG Skill" data-percent="75">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00004</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Sun Chow</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_24">
+														<div class="bar" data-name="SVG Skill" data-percent="75">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00005</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/middleware/uagent/</span>
+												</td>
+												<td><span>xz_dec_lzma2.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Waived</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Admin</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_25">
+														<div class="bar" data-name="SVG Skill" data-percent="25">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00006</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">False Positive</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Sun Chow</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_26">
+														<div class="bar" data-name="SVG Skill" data-percent="60">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00007</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>aes.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Waived</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Unassigned</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_27">
+														<div class="bar" data-name="SVG Skill" data-percent="70">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00008</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>rand.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Confirmed</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Admin</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_28">
+														<div class="bar" data-name="SVG Skill" data-percent="30">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00009</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Waived</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Unassigned</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_29">
+														<div class="bar" data-name="SVG Skill" data-percent="20">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00010</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td>
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown  dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">False Positive</span>
+														</button>
+														<div class="dropdown-menu scan-dropdown-menu">
+															<a class="dropdown-item red-txt"
+																href="javascript:void(0)">Critical</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Confirmed</a>
+															<a class="dropdown-item" href="javascript:void(0)">False
+																Positive</a>
+															<a class="dropdown-item"
+																href="javascript:void(0)">Waived</a>
+														</div>
+													</div>
+												</td>
+												<td class="no_clickable">Admin</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_30">
+														<div class="bar" data-name="SVG Skill" data-percent="40">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+
+										</tbody>
+									</table>
+									<svg width="0" height="0">
+										<defs>
+											<linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0"
+												x2="1" y2="1">
+												<stop stop-color="#00adef" />
+												<stop offset="100%" stop-color="#00adef" />
+											</linearGradient>
+											<linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0"
+												x2="0" y2="1">
+												<stop stop-color="#00adef" />
+												<stop offset="100%" stop-color="#00adef" />
+											</linearGradient>
+											<linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0"
+												x2="0" y2="1">
+												<stop stop-color="#f5821f" />
+												<stop offset="100%" stop-color="#f5821f" />
+											</linearGradient>
+											<linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1"
+												x2="0" y2="0">
+												<stop stop-color="#f5821f" />
+												<stop offset="100%" stop-color="#f5821f" />
+											</linearGradient>
+											<linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1"
+												x2="0" y2="0">
+												<stop stop-color="#ee3741" />
+												<stop offset="100%" stop-color="#ee3741" />
+											</linearGradient>
+											<linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1"
+												x2="1" y2="0">
+												<stop stop-color="#ee3741" />
+												<stop offset="100%" stop-color="#ee3741" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<div class="table-pagination">
+
+										<!-- <span class="pagination-defect-value">3 Defects Found</span> -->
+										<ul class="pagination justify-content-center">
+											<li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+											<li class="page-item active"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#">4</a></li>
+											<li class="page-item"><a class="page-link" href="#">5</a></li>
+											<li class="page-item"><a class="page-link" href="#">...</a></li>
+											<li class="page-item"><a class="page-link" href="#">10</a></li>
+											<li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+										</ul>
+										<div class="pagination-selection d-flex align-items-center">
+											<span>Items Per Page:</span>
+											<div class="dropup">
+												<button type="button" class="btn btn-pegination-value dropdown-toggle"
+													data-toggle="dropdown">
+													<span>10</span>
+												</button>
+												<div class="dropdown-menu scan-dropdown-menu">
+													<a class="dropdown-item red-txt" href="javascript:void(0)">10</a>
+													<a class="dropdown-item" href="javascript:void(0)">20</a>
+													<a class="dropdown-item" href="javascript:void(0)">30</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<!-- Right sidebar data information -->
+							<div class="scanningright d-flex flex-column flex-wrap">
+
+								<div class="scanning-description">
+									<h6 class="d-flex  justify-content-between">
+										<strong class="uaf_txt">UAF</strong>
+										<strong class="uaf_link">see more <a href="JavaScript:void();">here</a></strong>
+									</h6>
+									<p>The program has called a function that cannot be guaranteed to work safely.
+										Certain functions behave in dangerous ways regardless of how they are used.
+										Functions in this category are often implemented without taking security
+										concerns into account. The gets() function is unsafe because it does not perform
+										bounds checking on the size of its input. An attacker can easily send
+										arbitrarily-sized input to gets() and overflow the destination buffer.
+										Similarly, the >>operator is unsafe to use when reading into a
+										statically-allocated character array because it does not perform bounds checking
+										on the size of its input. An attacker can easily send arbitrarily-sized input to
+										the >>operator and overflow the destination buffer. For more information refer
+										to: https://LINK</p>
+								</div>
+
+
+								<div class="scanning-right">
+									<div class="scanning-right-top">
+										<div class="defect-type leveltogglelist">
+											<h6>Risk Assessment Defect Types</h6>
+											<div class="level-accordian">
+												<div class="level-acc-list" id="accordian_1">
+													<h5 class="toggle-defect-type ">Level 1</h5>
+													<ul class="toggle-defect toggle-ul scroll" >
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL38</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL39</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL40</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL41</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+													</ul>
+												</div>												
+												<div class="level-acc-list" id="accordian_2">
+													<h5 class="toggle-defect-type ">Level 2</h5>
+													<ul class="toggle-defect toggle-ul scroll">
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL38</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL39</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL40</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL41</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+													</ul>
+												</div>												
+												<div class="level-acc-list" id="accordian_3">
+													<h5 class="toggle-defect-type ">Level 3</h5>
+													<ul class="toggle-defect toggle-ul scroll">
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL38</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL39</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL40</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL41</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+													</ul>
+												</div>												
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="scan-bottom-button">
+									<a href="assign.html" class="print-btn assign-to-team sidebar-btn"
+										title="Assign Defects"><img src="images/icon/assign-to-team.png"
+											alt="Assign Defects" title="Assign Defects" /><span>Assign
+											Defects</span></a>
+									<a class="print-btn sidebar-btn print-report" title="Download Report"
+										data-toggle="modal" href="#print_report_popup"><img
+											src="images/icon/download_report_white.png" alt="Download-Report"
+											title="Print Report" /><span>Download Report</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</section>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade selected_files_popup" id="selected_files" role="dialog">
+		<div class="modal-dialog modal-dialog-centered">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="get_file_data">
+						<div id="jstree1" class="demo">
+							<ul>
+								<li data-jstree='{ "opened" : true }'><span>LOREM IPSUM</span>
+									<ul>
+										<li><span>SUB FOLDER</span>
+											<ul>
+												<li><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+												<li><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><span>SUB FOLDER</span>
+											<ul>
+												<li><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+												<li><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li data-jstree='{ "opened" : true }'><span>SUB FOLDER</span>
+											<ul>
+												<li><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+												<li data-jstree='{ "opened" : true }'><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="files_seleted_buttons d-flex justify-content-center">
+						<button type="button" title="BACK" class="btn btn-gray" data-dismiss="modal"
+							aria-label="Close">BACK</button>
+						<button type="button" title="BACK" class="btn btn-red">APPLY</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade print_report_popup" id="print_report_popup" role="dialog">
+		<div class="modal-dialog modal-dialog-centered">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-body print_report_body">
+					<div class="signin-form-head text-center ">
+						<img src="images/icon/download_report.png" title="Download Report" class="big-icon"
+							alt="downloard report icon">
+						<h2>DOWNLOAD REPORT</h2>
+						<p>We support both PDF & CSV format reports.<br>Please click the icons to download.</p>
+					</div>
+					<div class="print_box d-flex justify-content-center">
+						<div class="printbox">
+							<h3>dashboard summary</h3>
+							<a href="JavaScript:Void();" title="dashboard summary"><img src="images/svg/pdf.svg"
+									title="dashboard summary" /></a>
+						</div>
+						<div class="printbox">
+							<h3>Detailed Report</h3>
+							<a href="JavaScript:Void();" title="Detailed Report"><img src="images/svg/csv.svg"
+									title="Detailed Report" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+
+		$(document).ready(function () {
+
+			var transform_styles = ['-webkit-transform', '-ms-transform', 'transform'];
+			var tdlist = $(".scan-process").length
+			for (var j = 1; j <= tdlist; j++) {
+				var datapercent = $("#proceee_scan-results_" + j + " .bar").data("percent");
+				if (datapercent < 10) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1250);
+				}
+				else if (datapercent < 15) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1240);
+				}
+				else if (datapercent < 20) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1230);
+				}
+				else if (datapercent < 25) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1200);
+				}
+				else if (datapercent < 30) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1070);
+				}
+				else if (datapercent < 35) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1040);
+				}
+				else if (datapercent < 40) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1010);
+				}
+				else if (datapercent < 45) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 980);
+				}
+				else if (datapercent < 50) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 950);
+				}
+				else if (datapercent < 55) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 920);
+				}
+				else if (datapercent < 60) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 890);
+				}
+				else if (datapercent < 65) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 860);
+				}
+				else if (datapercent < 70) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 830);
+				}
+				else if (datapercent < 75) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 800);
+				}
+				else if (datapercent < 80) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 770);
+				}
+				else if (datapercent < 85) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 740);
+				}
+				else if (datapercent < 90) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 710);
+				}
+				else if (datapercent < 95) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 680);
+				}
+				else if (datapercent < 100) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 650);
+				}
+			}
+		});
+
+
+		$(".scan-dropdown-menu  a").click(function () {
+			var a = $(this).text();
+			var b = $('.btn-scan-dropdown').prop('title', a);
+			var c = $(this).closest('tr').prop('title', a);
+		});
+		$(".dropdown-menu a").click(function () {
+			var selText = $(this).text();
+			$(this).parents('.dropup').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+			if (selText == 10) {
+				$("tbody.scroll ").removeClass("value20");
+				$("tbody.scroll").removeClass("value30");
+			} else if (selText == 20) {
+				$("tbody.scroll").removeClass("value10");
+				$("tbody.scroll").removeClass("value30");
+			} else if (selText == 30) {
+				$("tbody.scroll").removeClass("value10");
+				$("tbody.scroll").removeClass("value20");
+			}
+			$("tbody.scroll").addClass("value" + selText);
+
+
+		});
+
+		$(document).ready(function () {
+			$('.get_file_data').mCustomScrollbar({
+				theme: "dark-3",
+			});
+			$('#jstree1').jstree({
+				"core": {
+					"themes": {
+						"icons": false
+					}
+				},
+				'plugins': ["wholerow", "checkbox"]
+			});
+		});
+
+
+		$(document).ready(function () {
+
+			$(".sorting-circle").click(function () {
+				$(this).toggleClass("sorting-active");
+			});
+
+			$(".risk-assessment ul li").click(function () {
+				$(this).toggleClass("selectefilter");
+			});
+			$(".toggle-defect-type ul li").click(function () {
+				$(this).toggleClass("selectefilter");
+			});
+			$(".levellist").click(function () {
+				$(this).toggleClass("active");
+			});
+
+			$(".leveltogglelist-xcalibyte ul.toggle-ul li").click(function () {
+				$(".leveltogglelist-xcalibyte ul.toggle-ul li")
+					.not(this)
+					.removeClass("active");
+				$(this).addClass("active");
+			});
+			$(".level-acc-list ul.toggle-ul li").click(function () {
+				$(".level-acc-list ul.toggle-ul li")
+					.not(this)
+					.removeClass("active");
+				$(this).addClass("active");
+			});
+
+
+		});
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+
+		$(".level-accordian > .level-acc-list > h5").click(function () {
+			$('.activelist').not(this).removeClass('activelist').next().hide(500);
+			$(this).toggleClass('activelist');
+			if (false == $(this).next().is(':visible')) {
+				$('.level-accordian > ul').slideUp(500);
+			}
+			$(this).next().slideToggle(500);
+		});
+
+
+		var animationIsOff = $.fx.off;
+		$.fx.off = true;
+		$('.level-accordian > .level-acc-list > h5:eq(3)').click()
+		$.fx.off = animationIsOff;
+
+		$(document).ready(function () {
+			$('.scan-selection select:not(.ignore)').niceSelect();
+			$('.com-top-selection .selection-box,.defect-per-select .selection-box').niceSelect();
+
+		});
+		$(document).ready(function () {
+			$('.risk-assessment ul li').click(function () {
+				$(this).toggleClass("selectefilter");
+			});
+			$('.toggle-defect-type ul li').click(function () {
+				$(this).toggleClass("selectefilter");
+			});
+		});
+		$(document).ready(function () {
+
+			$('.scan-dropdown-menu-scroll,.table-selection2 ul.list').mCustomScrollbar({
+				theme: "dark-3",
+			});
+
+			
+
+
+
+		});
+		/* script for toggle div*/
+		$(document).ready(function () {
+			$(".compliance h5").click(function () {
+				$(".compliance .nice-select").toggleClass("open");
+			});
+		});
+
+
+
+
+
+		$(document).ready(function () {
+			var tdlist = $(".scan-table tbody tr").length
+			for (i = 1; i <= tdlist; i++) {
+				filelisting = $(".file-listing").outerWidth();
+				filename = $(".file_name_" + i).outerWidth();
+				filepath = $(".file_path_" + i).outerWidth();
+				pathwidth = filename + filepath
+
+				if (filelisting < pathwidth) {
+					if (filepath < filename) {
+						$(".scan-table tr td span.file_name_" + i).css({
+							width: (filename + "px")
+						});
+					}
+					else if (filepath > filename) {
+						$(".scan-table tr td span.file_path_" + i).css({
+							width: "calc(100% - " + filename + "px)"
+						});
+					}
+				}
+				else if (filelisting > pathwidth) {
+					if (filepath < filename) {
+						$(".scan-table tr td span.file_name_" + i).css({
+							width: (filename + "px")
+						});
+					}
+				}
+			}
+
+
+
+		});
+
+
+
+		$(document).ready(function () {
+
+			var d = $('#speed_2').text();
+			AnimateRotate(d);
+
+			function AnimateRotate(d) {
+
+
+				$('.hand').animate({ deg: d }, {
+					duration: 1750,
+					easing: 'linear',
+					step: function (now) {
+						now = d;
+						$('.hand').css('-webkit-transform', 'rotate(' + (now) + 'deg)');
+					},
+					complete: function () {
+						play('spin');
+					}
+				});
+			}
+
+
+
+			//play('spin');
+			count = $('#speed_2').text();
+			// alert(count);
+			count_2 = parseInt(count) + parseInt(6);
+			//alert(count_2);
+			count_3 = parseInt(count) - parseInt(6);
+			//alert(count_3);
+			count_4 = parseInt(count) + parseInt(3);
+			// alert(count_4);
+			count_5 = parseInt(count) - parseInt(3);
+			//alert(count_5);
+
+			$.keyframe.define([{
+				name: 'rotate_arrow',
+				'0%': {
+					'transform': 'rotate(' + count + 'deg)',
+					'-webkit-transform': 'rotate(' + count + 'deg)',
+					'-moz-transform': 'rotate(' + count + 'deg)'
+				},
+				'20%': {
+					'transform': 'rotate(' + count_2 + 'deg)',
+					'-webkit-transform': 'rotate(' + count_2 + 'deg)',
+					'-moz-transform': 'rotate(' + count_2 + 'deg)'
+				},
+				'40%': {
+					'transform': 'rotate(' + count_3 + 'deg)',
+					'-webkit-transform': 'rotate(' + count_3 + 'deg)',
+					'-moz-transform': 'rotate(' + count_3 + 'deg)'
+				},
+				'60%': {
+					'transform': 'rotate(' + count_4 + 'deg)',
+					'-webkit-transform': 'rotate(' + count_4 + 'deg)',
+					'-moz-transform': 'rotate(' + count_4 + 'deg)'
+				},
+				'80%': {
+					'transform': 'rotate(' + count_5 + 'deg)',
+					'-webkit-transform': 'rotate(' + count_5 + 'deg)',
+					'-moz-transform': 'rotate(' + count_5 + 'deg)'
+				},
+				'100%': {
+					'transform': 'rotate(' + count + 'deg)',
+					'-webkit-transform': 'rotate(' + count + 'deg)',
+					'-moz-transform': 'rotate(' + count + 'deg)'
+				}
+			}]);
+		});
+		function play(animation) {
+			$('.hand').resetKeyframe(function () {
+				switch (animation) {
+					case 'spin':
+						$('.hand').playKeyframe({
+							name: 'rotate_arrow',
+							duration: "2s",
+							iterationCount: 1
+						});
+						break;
+
+				}
+			})
+		}
+
+		$(document).ready(function () {
+			$('.pagination-selection .dropdown-menu a').on('click', function (e) {
+				var tab_height = $("tbody.scroll").height();
+				var matrix = $(".container").css("-webkit-transform");
+				var translate_val = matrix.match(/-?[\d\.]+/g);
+				var windowSize = $(".code").height();
+				var container = $(".container").height();
+				//console.log(translate_val);
+				if (translate_val !== null) {
+					var maincontainer = parseFloat(container) * parseFloat(translate_val[0]) + parseFloat(100);
+				} else {
+					var maincontainer = container + parseFloat(100);
+				}
+
+
+				if (tab_height <= 300) {
+					$(".main-wrapper").css("min-height", "100vh");
+				} else if (tab_height >= 300) {
+					if ($(window).height() >= 700) {
+						$(".main-wrapper").css("min-height", maincontainer + "px");
+					} else {
+						$(".main-wrapper").css("min-height", container + "px");
+					}
+				}
+
+			});
+		});
+
+		$(document).ready(function () {
+			levelheight();
+			function levelheight() {
+				var mainheight = $(".scanning-right").height();
+				var h6_height = $(".leveltogglelist h6").outerHeight();				
+				var acc1_height = $("#accordian_1").outerHeight();
+				var acc2_height = $("#accordian_2").outerHeight();
+				var acc3_height = $("#accordian_3 .toggle-defect-type").outerHeight();
+				var finalheight = parseFloat(mainheight) - parseFloat(h6_height) - parseFloat(acc1_height) - parseFloat(acc2_height) - parseFloat(acc3_height);
+				
+				$(".leveltogglelist .toggle-ul").css("max-height", finalheight + "px");
+				$('.scroll').mCustomScrollbar({
+					theme: "dark-3",
+				});
+				$("#accordian_3 .toggle-defect-type").click();
+			}
+		});
+	</script>
+</body>
+
+</html>

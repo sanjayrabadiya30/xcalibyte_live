@@ -1,0 +1,728 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../images/favicon.png" />
+  <title>XCalibyte</title>
+  <link href="../css/bootstrap.css" rel="stylesheet" />
+  <link href="../css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.selectionBox.js"></script>
+  <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+  <script type="text/javascript" src="../js/custom.js"></script>
+</head>
+
+<body class="full-page-body chinese">
+  <div class="main-content solid-bg dashboard-page dashboard-list-page">
+    <div class="main-wrapper">
+      <div class="container">
+        <!-- Navigation header -->
+        <header class="header">
+          <!-- Left logo section -->
+          <div class="header-logo"> <a href="login.html" title="XCalibyte"><img
+                src="../images/xcalscan-logo-chinese.svg" title="xcal-scan" alt="xcal-scan" /></a> </div>
+          <div class="head-center header-menu d-flex flex-row align-items-end  justify-content-end">
+            <a href="user-profile.html"><img src="../images/icon/user-circle.png" title="Profile"
+                alt="Profile"><span>Admin</span></a>
+            <a href="login.html" title="Logout"><img src="../images/icon/logout-circle.png" title="Logout"
+                alt="Logout" /></a>
+            <a href="contact.html" title="Contact"><img src="../images/icon/support-circle.png" title="Contact"
+                alt="Contact" /></a>
+          </div>
+          <div class="clearfix"></div>
+        </header>
+        <section class="main-section">
+          <!-- Left sidebar menu -->
+          <button class="left-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          <div class="sidebar">
+            <div class="menu top-menu">
+              <ul>
+                <li>
+                  <a href="new-project.html" title="New Projects">
+                    <div class="head-right-icon"><img src="../images/icon/new-project-plus.png" title="Projects"
+                        alt="New Project" /></div><span>新建项目</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="dashboard.html" title="My Projects">
+                    <div class="head-right-icon"><img src="../images/icon/my-projects-circle.png" title="Projects"
+                        alt="Projects" /></div><span>我的项目</span>
+                  </a>
+                </li>
+                <li class="dropdown-sub-menu">
+                  <a href="JavaScript:Void();">
+                    <div class="head-right-icon"><img src="../images/icon/setting-circle.png" title="Administration"
+                        alt="Administration" /></div><span>管理</span>
+                  </a>
+                  <div class="submenu mt-auto">
+                    <a href="administration-2.html" title="License">证书管理</a>
+                    <a href="user-management.html" title="User Managament">用户管理</a>
+                    <a href="email-server-configuration.html" title="Email Server">邮件设置</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Copyright text-->
+            <div class="copyright-sidebar">
+              <p>鉴释 <span>Xcalscan -0.1</span> 版本</p>
+              <p>所有产品权益属于鉴释，</p>
+              <p>如未经许可，请勿擅自复制与转发。</p>
+            </div>
+          </div>
+          <div class="sidebar-data">
+            <!-- Top filter option start -->
+            <div class="top-filter d-flex align-items-center justify-content-between">
+
+              <div class="sort-project-option d-flex">
+                <div class="dashnoard-head-left-part d-flex">
+                  <div class="option-div">
+                    <span class="sort-label">显示方式</span>
+                    <a href="dashboard.html" class="type-selector ">图标</a>
+                    <a href="javascript:;" class="type-selector active">列表</a>
+                  </div>
+                  <div class="option-div">
+                    <span class="sort-label">排序</span>
+                    <a href="javascript:;" class="sort-label up"> 扫描日期</a>
+                    <a href="javascript:;" class="sort-label"> 项目名称</a>
+                  </div>
+                </div>
+                <div class="new_project_drop">
+                  <span>扫描选项</span>
+                  <div class="dropdown">
+                    <button type="button" class="dropdown-toggle" href="#" id="dropdownMenuLink"
+                      data-toggle="dropdown">CERT</button>
+                    <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" data-value="0" href="#">全部</a>
+                      <a class="dropdown-item" data-value="1" href="#">Xcalibyte</a>
+                      <a class="dropdown-item" data-value="2" href="#">CERT</a>                                            
+                      <a class="dropdown-item" data-value="3" href="#">IOT嵌入开发</a>
+                      <a class="dropdown-item" data-value="4" href="#">GDPR</a>   
+                      <a class="dropdown-item" data-value="5" href="#">OCLint</a>
+                      <a class="dropdown-item" data-value="6" href="#">OWASP</a>                                         
+                      <a class="dropdown-item" data-value="7" href="#">定制规则</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search-field dashboard-search">
+                <input type="text" class="search-field-input p-search" placeholder="搜索项目" />
+                <button class="btn-search"><img src="../images/icon/search-icon.png"></button>
+              </div>
+            </div>
+            <!-- Top filter option end -->
+            <!--- Icon view start -->
+            <!--- List view start -->
+            <div class="list-view">
+              <div class="scan-table scan-results project-table">
+
+                <table class="table table-fixed">
+                  <thead>
+                    <tr>
+                      <th>项目名称<a href="javascript:;" class="sort-label"></a></th>
+                      <th>文件数量<a href="javascript:;" class="sort-label"></a></th>
+                      <th>代码行数<a href="javascript:;" class="sort-label"></a></th>
+                      <th>扫描时间<a href="javascript:;" class="sort-label"></a></th>
+                      <th>风险数量<a href="javascript:;" class="sort-label"></a></th>
+                      <th>风险等级<div class="p-line">
+                          <div class="risk-no red">高</div>
+                          <div class="risk-no orange">中</div>
+                          <div class="risk-no blue">低</div>
+                          <div class="risk-no red">高危</div>
+                        </div>
+                      </th>
+                      <th>操作</th>
+
+                    </tr>
+                  </thead>
+                  <tbody class="scroll" id="clickable">
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">PROJECT TRIAL PHASE I</a></td>
+                      <td><a href="scan-results.html">12</a></td>
+                      <td><a href="scan-results.html"><span>1015</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">412</a> </td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">1,891</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">32</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">3,762</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">16</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">PROJECT TRIAL PHASE I</a></td>
+                      <td><a href="scan-results.html">13</a></td>
+                      <td><a href="scan-results.html"><span>2178</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">317</a> </td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">100</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">1,234</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">1,118</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">10</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">APPLICATION FORM SETTING</a></td>
+                      <td><a href="scan-results.html">15</a></td>
+                      <td><a href="scan-results.html"><span>1131</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">29</a></td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">2,276</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">21</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">211</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">8</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">PROJECT TRIAL PHASE I</a></td>
+                      <td><a href="scan-results.html">12</a></td>
+                      <td><a href="scan-results.html"><span>1015</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">412</a> </td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">29</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">7,654</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">29</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">29</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">PROJECT TRIAL PHASE I</a></td>
+                      <td><a href="scan-results.html">13</a></td>
+                      <td><a href="scan-results.html"><span>2178</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">317</a> </td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">400</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">9,871</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">909</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">15</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">APPLICATION FORM SETTING</a></td>
+                      <td><a href="scan-results.html">15</a></td>
+                      <td><a href="scan-results.html"><span>1131</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">29</a></td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">31</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">87</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">98</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">31</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">PROJECT TRIAL PHASE I</a></td>
+                      <td><a href="scan-results.html">12</a></td>
+                      <td><a href="scan-results.html"><span>1015</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">412</a> </td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">196</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">300</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">3,987</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">16</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">PROJECT TRIAL PHASE I</a></td>
+                      <td><a href="scan-results.html">13</a></td>
+                      <td><a href="scan-results.html"><span>2178</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">317</a> </td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">1,980</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">3,654</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">80</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">10</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">APPLICATION FORM SETTING</a></td>
+                      <td><a href="scan-results.html">15</a></td>
+                      <td><a href="scan-results.html"><span>1131</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">29</a></td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">80</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">1,436</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">8</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">PROJECT TRIAL PHASE I</a></td>
+                      <td><a href="scan-results.html">12</a></td>
+                      <td><a href="scan-results.html"><span>1015</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">412</a> </td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">9,721</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">878</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">2,987</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">29</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">PROJECT TRIAL PHASE I</a></td>
+                      <td><a href="scan-results.html">13</a></td>
+                      <td><a href="scan-results.html"><span>2178</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">317</a> </td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">387</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">98</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">187</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">10</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">APPLICATION FORM SETTING</a></td>
+                      <td><a href="scan-results.html">15</a></td>
+                      <td><a href="scan-results.html"><span>1131</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">29</a></td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">31</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">209</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">8</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">15</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">PROJECT TRIAL PHASE I</a></td>
+                      <td><a href="scan-results.html">12</a></td>
+                      <td><a href="scan-results.html"><span>1015</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">412</a> </td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">987</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">4,098</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">15</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">16</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">PROJECT TRIAL PHASE I</a></td>
+                      <td><a href="scan-results.html">13</a></td>
+                      <td><a href="scan-results.html"><span>2178</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">317</a> </td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">7,321</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">16</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">7,456</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">10</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-name"><a href="scan-results.html">APPLICATION FORM SETTING</a></td>
+                      <td><a href="scan-results.html">15</a></td>
+                      <td><a href="scan-results.html"><span>1131</span></a></td>
+                      <td class="p-time"><a href="scan-results.html"><span>00:04:28</span><span>7/11/2018</span></a>
+                      </td>
+                      <td class="red-txt"><a href="scan-results.html">29</a></td>
+                      <td>
+                        <div class="risk-list align-items-center">
+                          <div class="risk-block red ">
+                            <div class="risk-count">80</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-count">103</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-count">106</div>
+                          </div>
+                          <div class="risk-block red ">
+                            <div class="risk-critical">8</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="action-btn">
+                        <div class="d-flex align-items-center">
+                          <button class="trash" title="Trash"><img src="../images/icon/del.png" title="Trash"
+                              alt="trash"></button>
+                          <span class="s-text">扫描</span>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                    
+                  </tbody>
+                </table>
+                <div class="table-pagination">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                      <li class="page-item"><a class="page-link" href="#">10</a></li>
+                      <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+                  </ul>
+                  <div class="pagination-selection d-flex align-items-center">
+                    <span>每页显示:</span>
+                    <div class="dropup">
+                      <button type="button" class="btn btn-pegination-value dropdown-toggle" data-toggle="dropdown">
+                        <span>10</span>
+                      </button>
+                      <div class="dropdown-menu scan-dropdown-menu p-page-dropdown-scroll">
+                        <a class="dropdown-item red-txt" href="javascript:void(0)">10</a>
+                        <a class="dropdown-item" href="javascript:void(0)">20</a>
+                        <a class="dropdown-item" href="javascript:void(0)">30</a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+
+            </div>
+
+            <!--List view end-->
+
+            <!--Icon view end-->
+
+            <!-- Current projects listing start-->
+
+
+          </div>
+        </section>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    setTimeout(function () {
+      var transform_styles = ['-webkit-transform', '-ms-transform', 'transform'];
+      var tdlist = $(".project-table tbody tr").length
+      for (var j = 1; j <= tdlist; j++) {
+        var rotation = $("#div_percentage" + j).text();
+        var fix_rotation = rotation * 2;
+        for (i in transform_styles) {
+          $('#circle_' + j + ' .fill, #mask_full_' + j).css(transform_styles[i], 'rotate(' + rotation + 'deg)');
+          $('#circle_' + j + ' .fill.fix').css(transform_styles[i], 'rotate(' + fix_rotation + 'deg)');
+        }
+      }
+    }, 300);
+    $(".dropdown-menu a").click(function () {
+      var selText = $(this).text();
+      $(this).parents('.dropup').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+    });
+    $('.total-value .扫描 > img').fadeTo("slow", 1);
+    $(document).ready(function () {
+      $('.com-selector').niceSelect();
+      $('.scan-selection select:not(.ignore)').niceSelect();
+
+    });
+    $(window).on('load', function () {
+
+      $('.color-line').show('slow');
+      $('.total-value .on-scan > img').fadeTo("slow", 0.43);
+      /*custom scroll*/
+      $('.scroll,.p-page-dropdown-scroll').mCustomScrollbar({
+        theme: "dark-3",
+        mouseWheelPixels: 50
+      });
+      /* scroll to top*/
+
+
+      height = $(".project-box").outerHeight();
+      $('.upload-box').css('height', height);
+    });
+
+  // $(document).ready(function(){
+  //   var .riskcount
+  // });
+
+
+
+  </script>
+</body>
+
+</html>

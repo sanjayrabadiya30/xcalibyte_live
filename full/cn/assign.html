@@ -1,0 +1,3094 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../images/favicon.png" />
+	<title>XCalibyte</title>
+	<link href="../css/bootstrap.css" rel="stylesheet" />
+	<link href="../css/font-awesome.min.css" rel="stylesheet" />
+	<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	<link href="../css/sweetalert.css" rel="stylesheet">
+	<link href="../css/tree-style.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/popper.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.selectionBox.js"></script>
+	<script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="../js/jquery.contextMenu.js"></script>
+	<script type="text/javascript" src="../js/sweetalert.js"></script>
+	<script type="text/javascript" src="../js/jquery.keyframes.js"></script>
+	<script type="text/javascript" src="../js/jstree.js"></script>
+	<script type="text/javascript" src="../js/custom.js"></script>
+</head>
+
+<body class="chinese ">
+	<div class="main-content solid-bg">
+		<div class="main-wrapper scan-results-page assign-page">
+			<!--header-section -->
+			<div class="container">
+				<header class="header">
+					<!-- Left logo section -->
+					<div class="header-logo"> <a href="login.html" title="XCalibyte"><img
+								src="../images/xcalscan-logo-chinese.svg" title="xcal-scan" alt="xcal-scan" /></a>
+					</div>
+					<div class="head-center header-menu d-flex flex-row align-items-end  justify-content-end">
+						<a href="user-profile.html"><img src="../images/icon/user-circle.png" title="Profile"
+								alt="Profile"><span>Admin</span></a>
+						<a href="login.html" title="Logout"><img src="../images/icon/logout-circle.png" title="Logout"
+								alt="Logout" /></a>
+						<a href="contact.html" title="Contact"><img src="../images/icon/support-circle.png"
+								title="Contact" alt="Contact" /></a>
+					</div>
+					<div class="clearfix"></div>
+				</header>
+				<section class="main-section">
+					<!-- sidebar navigation -->
+					<button class="left-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+					<div class="sidebar">
+						<div class="menu top-menu">
+							<ul>
+								<li>
+									<a href="new-project.html" title="New Projects">
+										<div class="head-right-icon"><img src="../images/icon/new-project-plus.png"
+												title="Projects" alt="New Project" /></div><span>新建项目</span>
+									</a>
+								</li>
+								<li>
+									<a href="dashboard.html" title="My Projects">
+										<div class="head-right-icon"><img src="../images/icon/my-projects-circle.png"
+												title="Projects" alt="Projects" /></div><span>我的项目</span>
+									</a>
+								</li>
+								<li class="dropdown-sub-menu">
+									<a href="JavaScript:Void();">
+										<div class="head-right-icon"><img src="../images/icon/setting-circle.png"
+												title="Administration" alt="Administration" /></div><span>管理</span>
+									</a>
+									<div class="submenu mt-auto">
+										<a href="administration-2.html" title="License">证书管理</a>
+										<a href="user-management.html" title="User Managament">用户管理</a>
+										<a href="email-server-configuration.html" title="Email Server">邮件设置</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- Copyright text-->
+						<div class="copyright-sidebar">
+							<p>鉴释 <span>Xcalscan -0.1</span> 版本</p>
+							<p>所有产品权益属于鉴释，</p>
+							<p>如未经许可，请勿擅自复制与转发。</p>
+						</div>
+					</div>
+					<div class="sidebar-data">
+						<div class="scanning-middle-content d-flex flex-row justify-content-between ">
+							<div class="scanning-left assign-table">
+								<div class="scan-file-part d-flex flex-row justify-content-start">
+									<div class="back-page">
+										<a href="scanning-progress.html"><img src="../images/icon/back-circle.png" />
+										</a>
+									</div>
+									<div class="scan-file-middle">
+										<div class="d-flex flex-row justify-content-between">
+											<div class=" d-flex flex-row align-items-center">
+												<div class="scaning-head-listing project-name-head">
+													<p><strong>Testing_ abc_team...</strong></p>
+													<p><span class="Version-name">扫描引擎:</span> Xcalscan<span
+															class="Version-name">版本</span>1.0</p>
+												</div>
+											</div>
+											<div class=" d-flex flex-row align-items-center">
+												<div class="dropdown view-dropdown">
+													<strong>查看</strong>
+													<button type="button" title="no_clickable"
+														class="btn btn-view  dropdown-toggle" data-toggle="dropdown">
+														<span title="no_clickable">所有文件 </span>
+													</button>
+													<div class="dropdown-menu scan-dropdown-menu view-dropdown-menu">
+														<a class="dropdown-item" href="javascript:void(0)">所有文件</a>
+														<a class="dropdown-item" data-toggle="modal"
+															href="#selected_files" href="javascript:void(0)">选择文件</a>
+													</div>
+												</div>
+
+												<div class="scanning-search">
+													<input class="form-control" type="search" name=""
+														placeholder="搜索风险ID">
+													<button class="btn-search"><img
+															src="../images/icon/search-icon.png"></button>
+												</div>
+											</div>
+										</div>
+										<div class="scan-head-bottom d-flex flex-row align-items-center">
+											<div class="scaning-head-listing scan-date-time">
+												<p><strong>上次</strong><span>10:28</span></p>
+												<p><strong>扫描</strong><span>06/08/2018</span></p>
+											</div>
+											<div class="scaning-head-listing scan-file-line">
+												<p><strong>文件</strong><span>47</span></p>
+												<p><strong>行数</strong><span>8932</span></p>
+											</div>
+											<div class="scaning-head-listing scan-time">
+												<p><strong>扫描 时间</strong></p>
+												<p><span>0:0:58 </span></p>
+											</div>
+
+											<div class="scaning-head-listing">
+												<div class="scan-results-xcalibyte-dropdown">
+													<div class="dropdown">
+														<span>显示方式</span>
+														<button type="button" class="dropdown-toggle" href="#"
+															id="dropdownMenuLink" data-toggle="dropdown">CERT</button>
+														<div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+															<a class="dropdown-item" data-value="0" href="#">全部</a>
+															<a class="dropdown-item" data-value="1" href="#">Xcalibyte</a>
+															<a class="dropdown-item" data-value="2" href="#">CERT</a>
+															<a class="dropdown-item" data-value="3" href="#">IOT嵌入开发</a>
+															<a class="dropdown-item" data-value="4" href="#">gdpr</a>
+															<a class="dropdown-item" data-value="5" href="#">OCLint</a>
+															<a class="dropdown-item" data-value="6" href="#">owasp</a>
+															<a class="dropdown-item" data-value="7" href="#">定制规则</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="scaning-head-listing scan-date-time ">
+												<p class="gray-txt2"><strong>上次</strong><span>10:28</span></p>
+												<p class="gray-txt2"><strong>扫描</strong><span>06/08/2018</span></p>
+											</div>
+											<div class="scaning-head-listing scan-file-line ">
+												<p class="gray-txt2"><strong>文件</strong><span>47</span></p>
+												<p class="gray-txt2"><strong>行数</strong><span>8932</span></p>
+											</div>
+											<div class="scaning-head-listing chnage-defect-no">
+												<p class="gray-txt2"><strong>缺陷</strong><span>352</span></p>
+												<p class="defect-per-select gray-txt2"><strong>更改</strong><span>344
+														(8%)</span><span class="defect-arrow up"></span></p>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="team-assign d-flex flex-row justify-content-between">
+									<div class="team-left ">
+										<div class="team-left-top">
+											<span>指派任务</span>
+										</div>
+										<div class="team-sorting">
+											<span>排序</span>
+											<div class="d-flex flex-row">
+												<div class="teamsorting"><a href="javascript:;"
+														class="sort-label up"></a>分配</div>
+												<div class="teamsorting"><a href="javascript:;"
+														class="sort-label"></a>名称</div>
+											</div>
+										</div>
+										<!-- <div class="scanning-search assign-serch">
+						                	<input class="form-control" type="search" name="" placeholder="搜索">
+						                </div> -->
+										<div class="team-left-bottom">
+											<span>总计分配</span>
+											<h2><strong>37</strong><strong class="slesh">/</strong>319</h2>
+										</div>
+									</div>
+									<div class="team-right team-right-scroll">
+										<ul class="d-flex flex-row flex-wrap team-user-listing ">
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>1</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>1</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Jackie Li</span>
+												</a></li>
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>4</strong></div>
+													<span>Sun Chow</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Colin Giles</span>
+												</a></li>
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>5</strong></div>
+													<span>Tan Rahman</span>
+												</a></li>
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>5</strong></div>
+													<span>Tan Rahman</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>9</strong></div>
+													<span>Jackie Li</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Sun Chow</span>
+												</a></li>
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>3</strong></div>
+													<span>Colin Giles</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Tan Rahman</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Tan Rahman</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>9</strong></div>
+													<span>Jackie Li</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Sun Chow</span>
+												</a></li>
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>3</strong></div>
+													<span>Colin Giles</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Tan Rahman</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Tan Rahman</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>9</strong></div>
+													<span>Jackie Li</span>
+												</a></li>
+
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Sun Chow</span>
+												</a></li>
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>3</strong></div>
+													<span>Colin Giles</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Tan Rahman</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Tan Rahman</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>9</strong></div>
+													<span>Jackie Li</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Sun Chow</span>
+												</a></li>
+
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>3</strong></div>
+													<span>Colin Giles</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Tan Rahman</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Tan Rahman</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Ann Lee</span>
+												</a></li>
+											<li class="assigned"><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>9</strong></div>
+													<span>Jackie Li</span>
+												</a></li>
+											<li><a href="#">
+													<div class="team-images"><img
+															src="../images/svg/person.svg"><strong>+</strong></div>
+													<span>Sun Chow</span>
+												</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Scan result table data start -->
+								<div class="scan-table scan-results">
+									<label class="sort-by">排序</label>
+									<table class="table table-fixed">
+										<thead>
+											<tr>
+												<!-- <th class="assign-sorting-circle"><a href="javascript:;" class="sorting-circle redbg" ></a><a href="javascript:;" class="sorting-circle orangebg"></a><a href="javascript:;" class="sorting-circle bluelightbg"></a></th> -->
+												<th><a href="javascript:;" class="sort-label up"></a></th>
+												<th>编号<a href="javascript:;" class="sort-label"></a></th>
+												<th>文件<a href="javascript:;" class="sort-label"></a></th>
+												<th>行号</th>
+												<th>方法名<a href="javascript:;" class="sort-label"></a></th>
+												<th>变量名<a href="javascript:;" class="sort-label"></a></th>
+												<th>类型<a href="javascript:;" class="sort-label"></a></th>
+												<th>操作<a href="javascript:;" class="sort-label"></a></th>
+												<th>指派给<a href="javascript:;" class="sort-label"></a></th>
+											</tr>
+										</thead>
+										<tbody class="scroll" id="clickable">
+											<tr class="dblclickable">
+												<td class="red-txt"><a href="triage-1.html"
+														class="circle-level-txt redbg" data-toggle="tooltip"
+														data-placement="left" title="Definite">D</a></td>
+												<td><a href="triage-1.html">00001</a></td>
+												<td><a href="triage-1.html"><span>jcontroller</span></a></td>
+												<td><a href="triage-1.html"><span>controller.rb : 38</span></a></td>
+												<td><a href="triage-1.html"><span>if1A</span></a></td>
+												<td><a href="triage-1.html"><span>size</span></a></td>
+												<td><a href="triage-1.html"><span>UAF</span></a></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">System Account</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_1">
+														<div class="bar" data-name="SVG Skill" data-percent="50">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00002</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span> rand.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Jackie Li</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_4">
+														<div class="bar" data-name="SVG Skill" data-percent="60">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00003</td>
+												<td><span>/home/parallels/stx/mastiff/osprey-gcc-4.2.0/gcc/con/m68k/</span>
+												</td>
+												<td><span>fpgnulib.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Unassigned</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_5">
+														<div class="bar" data-name="SVG Skill" data-percent="74">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00004</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Sun Chow</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_6">
+														<div class="bar" data-name="SVG Skill" data-percent="25">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00005</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/middleware/uagent/</span>
+												</td>
+												<td><span>xz_dec_lzma2.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">忽略</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Admin</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_7">
+														<div class="bar" data-name="SVG Skill" data-percent="30">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00006</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">误报</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Ann Lee</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_8">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00007</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>aes.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">忽略</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Sun Chow</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_9">
+														<div class="bar" data-name="SVG Skill" data-percent="60">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00008</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>rand.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Unassigned</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_10">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00009</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">忽略</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Admin</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_11">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00010</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">误报</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Unassigned</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_12">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="dblclickable">
+												<td class="red-txt"><a href="triage-1.html"
+														class="circle-level-txt redbg" data-toggle="tooltip"
+														data-placement="left" title="Definite">D</a></td>
+												<td><a href="triage-1.html">00001</a></td>
+												<td><a href="triage-1.html"><span>jcontroller</span></a></td>
+												<td><a href="triage-1.html"><span>controller.rb : 38</span></a></td>
+												<td><a href="triage-1.html"><span>if1A</span></a></td>
+												<td><a href="triage-1.html"><span>size</span></a></td>
+												<td><a href="triage-1.html"><span>UAF</span></a></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Ann Lee</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_13">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00002</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span> rand.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Jackie Li</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_14">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00003</td>
+												<td><span>/home/parallels/stx/mastiff/osprey-gcc-4.2.0/gcc/con/m68k/</span>
+												</td>
+												<td><span>fpgnulib.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Unassigned</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_15">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00004</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Sun Chow</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_16">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00005</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/middleware/uagent/</span>
+												</td>
+												<td><span>xz_dec_lzma2.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">忽略</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Admin</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_17">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00006</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">误报</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Ann Lee</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_18">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00007</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>aes.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">忽略</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Sun Chow</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_19">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00008</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>rand.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Unassigned</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_20">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00009</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">忽略</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Admin</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_21">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00010</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">误报</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Unassigned</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_22">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="dblclickable">
+												<td class="red-txt"><a href="triage-1.html"
+														class="circle-level-txt redbg" data-toggle="tooltip"
+														data-placement="left" title="Definite">D</a></td>
+												<td><a href="triage-1.html">00001</a></td>
+												<td><a href="triage-1.html"><span>jcontroller</span></a></td>
+												<td><a href="triage-1.html"><span>controller.rb : 38</span></a></td>
+												<td><a href="triage-1.html"><span>if1A</span></a></td>
+												<td><a href="triage-1.html"><span>size</span></a></td>
+												<td><a href="triage-1.html"><span>UAF</span></a></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Ann Lee</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_23">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00002</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span> rand.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Jackie Li</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_24">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="red-txt"><a class="circle-level-txt redbg"
+														data-toggle="tooltip" data-placement="left"
+														title="Definite">D</a></td>
+												<td>00003</td>
+												<td><span>/home/parallels/stx/mastiff/osprey-gcc-4.2.0/gcc/con/m68k/</span>
+												</td>
+												<td><span>fpgnulib.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Unassigned</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_25">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00004</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Sun Chow</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_26">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00005</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/middleware/uagent/</span>
+												</td>
+												<td><span>xz_dec_lzma2.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">忽略</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Admin</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_27">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00006</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">误报</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Ann Lee</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_28">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="orange-txt">
+													<div class="circle-level-txt orangebg "></div>
+												</td>
+												<td>00007</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>aes.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">忽略</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Sun Chow</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_29">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00008</td>
+												<td><span>/home/parallels/test-ali/AliOS-Things/security/alicrypto/csky/ch2201/</span>
+												</td>
+												<td><span>rand.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">高危</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Unassigned</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_28">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00009</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/build/compiler/gcc-arm-none</span>
+												</td>
+												<td><span>stdio.h</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">忽略</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Admin</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_29">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="gray-txt">
+													<div class="circle-level-txt bluelightbg"></div>
+												</td>
+												<td>00010</td>
+												<td><span>/Users/lkwangus/git/ali/AliOS-Things/security/mbedtls/</span>
+												</td>
+												<td><span>ssl_ciphersuites.c</span></td>
+												<td><span>if1A</span></td>
+												<td><span>size</span></td>
+												<td><span>UAF</span></td>
+												<td class="no_clickable">误报</td>
+												<td class="no_clickable">
+													<div class="dropdown">
+														<button type="button" title="no_clickable"
+															class="btn btn-scan-dropdown dropdown-toggle"
+															data-toggle="dropdown">
+															<span title="no_clickable">Unassigned</span>
+														</button>
+														<div
+															class="dropdown-menu scan-dropdown-menu scan-dropdown-menu-scroll">
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+															<a class="dropdown-item" href="#">Admin</a>
+															<a class="dropdown-item" href="#">Ann Lee</a>
+															<a class="dropdown-item" href="#">Dexter Chan</a>
+															<a class="dropdown-item" href="#">Sun Chow</a>
+														</div>
+													</div>
+												</td>
+												<td class="action-btn scan-results-progress-tr">
+													<div class="progress-table scan-process"
+														id="proceee_scan-results_30">
+														<div class="bar" data-name="SVG Skill" data-percent="97">
+															<svg viewBox="-35 -35 270 270">
+																<g fill="none" stroke-width="50"
+																	stroke-dasharray="10 10"
+																	transform="translate(90,90)">
+																	<path d="M 0,-100 A 100,100 0 0,1 86.6,-50"
+																		stroke="url(#cl1)" />
+																	<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50"
+																		stroke="url(#cl2)" />
+																	<path d="M 86.6,50 A 100,100 0 0,1 0,100"
+																		stroke="url(#cl3)" />
+																	<path d="M 0,100 A 100,100 0 0,1 -86.6,50"
+																		stroke="url(#cl4)" />
+																	<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50"
+																		stroke="url(#cl5)" />
+																	<path d="M -86.6,-50 A 100,100 0 0,1 0,-100"
+																		stroke="url(#cl6)" />
+																</g>
+															</svg>
+															<svg viewBox="-15 -5 220 220" class="overlay_svg">
+																<path
+																	d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z"
+																	stroke-dashoffset="610">
+																</path>
+															</svg>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<svg width="0" height="0">
+										<defs>
+											<linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0"
+												x2="1" y2="1">
+												<stop stop-color="#00adef" />
+												<stop offset="100%" stop-color="#00adef" />
+											</linearGradient>
+											<linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0"
+												x2="0" y2="1">
+												<stop stop-color="#00adef" />
+												<stop offset="100%" stop-color="#00adef" />
+											</linearGradient>
+											<linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0"
+												x2="0" y2="1">
+												<stop stop-color="#f5821f" />
+												<stop offset="100%" stop-color="#f5821f" />
+											</linearGradient>
+											<linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1"
+												x2="0" y2="0">
+												<stop stop-color="#f5821f" />
+												<stop offset="100%" stop-color="#f5821f" />
+											</linearGradient>
+											<linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1"
+												x2="0" y2="0">
+												<stop stop-color="#ee3741" />
+												<stop offset="100%" stop-color="#ee3741" />
+											</linearGradient>
+											<linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1"
+												x2="1" y2="0">
+												<stop stop-color="#ee3741" />
+												<stop offset="100%" stop-color="#ee3741" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<div class="table-pagination">
+										<ul class="pagination justify-content-center">
+											<li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+											<li class="page-item active"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#">4</a></li>
+											<li class="page-item"><a class="page-link" href="#">5</a></li>
+											<li class="page-item"><a class="page-link" href="#">...</a></li>
+											<li class="page-item"><a class="page-link" href="#">10</a></li>
+											<li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+										</ul>
+										<div class="pagination-selection d-flex align-items-center">
+											<span>每页显示:</span>
+											<div class="dropup">
+												<button type="button" class="btn btn-pegination-value dropdown-toggle"
+													data-toggle="dropdown">
+													<span>10</span>
+												</button>
+												<div class="dropdown-menu scan-dropdown-menu">
+													<a class="dropdown-item red-txt" href="javascript:void(0)">10</a>
+													<a class="dropdown-item" href="javascript:void(0)">20</a>
+													<a class="dropdown-item" href="javascript:void(0)">30</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<!-- Right sidebar data information -->
+							<div class="scanningright d-flex flex-column flex-wrap">
+								<div class="scanning-description">
+									<h6 class="d-flex  justify-content-between">
+										<strong class="uaf_txt">UAF</strong>
+										<strong class="uaf_link">查看更多 <a href="JavaScript:void();">更多</a></strong>	
+									</h6>
+									<p>程序调用了一个不能保证安全工作的函数。 不管如何使用，某些函数的运行必然是危险的。此类功能的实现通常不考虑安全问题。例如，
+										Get()函数不安全，因为它不对输入的大小执行边界检查。攻击者可以轻松地将任意大小的输入发送到Get()
+										函数并溢出目标缓冲区。同样，当读取静态分配的字符数组时，>>运算符函数也是不安全的，因为它不会对输入的大小执行边界检查。攻击者可以轻松地将任意大小的输入发送给
+										>>运算符函数，并溢出目标缓冲区。有关详细信息，请参阅：https://link</p>
+								</div>
+								<div class="scanning-right team-right-section">
+									<div class="scanning-right-top">
+										<div class="defect-type leveltogglelist">
+											<h6>缺陷类型</h6>
+											<div class="level-accordian">
+												<div class="level-acc-list" id="accordian_1">
+													<h5 class="toggle-defect-type ">高风险</h5>
+													<ul class="toggle-defect toggle-ul scroll" >
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL38</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL39</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL40</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL41</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+													</ul>
+												</div>												
+												<div class="level-acc-list" id="accordian_2">
+													<h5 class="toggle-defect-type ">中风险</h5>
+													<ul class="toggle-defect toggle-ul scroll">
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL38</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL39</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL40</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL41</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+													</ul>
+												</div>												
+												<div class="level-acc-list" id="accordian_3">
+													<h5 class="toggle-defect-type ">低风险</h5>
+													<ul class="toggle-defect toggle-ul scroll">
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL38</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL39</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL40</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL41</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>EXP32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>PRE32</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL30</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL31</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL36</strong><span>3</span></li>
+														<li class="d-flex flex-row justify-content-between">
+															<strong>DCL37</strong><span>3</span></li>
+													</ul>
+												</div>												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="scan-bottom-button">
+									<a href="javascript:;"
+										onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);"
+										class="print-btn sidebar-btn email-team sweet-5" title="Eamil Team"><img
+											src="../images/icon/email-team.png" alt="Eamil Team"
+											title="Eamil Team" /><span>发送邮件通知</span></a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</section>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade selected_files_popup" id="selected_files" role="dialog">
+		<div class="modal-dialog modal-dialog-centered">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="get_file_data">
+						<div id="jstree1" class="demo">
+							<ul>
+								<li data-jstree='{ "opened" : true }'><span>LOREM IPSUM</span>
+									<ul>
+										<li><span>SUB FOLDER</span>
+											<ul>
+												<li><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+												<li><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><span>SUB FOLDER</span>
+											<ul>
+												<li><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+												<li><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li data-jstree='{ "opened" : true }'><span>SUB FOLDER</span>
+											<ul>
+												<li><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+												<li data-jstree='{ "opened" : true }'><span>SUB FOLDER</span>
+													<ul>
+														<li><span>Sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>sub folder content</span></li>
+														<li><span>More sub folder content</span></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="files_seleted_buttons d-flex justify-content-center">
+						<button type="button" title="BACK" class="btn btn-gray" data-dismiss="modal"
+							aria-label="Close">返回</button>
+						<button type="button" title="BACK" class="btn btn-red">确认</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+
+			var transform_styles = ['-webkit-transform', '-ms-transform', 'transform'];
+			var tdlist = $(".scan-process").length
+			for (var j = 1; j <= tdlist; j++) {
+				var datapercent = $("#proceee_scan-results_" + j + " .bar").data("percent");
+				if (datapercent < 10) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1250);
+				}
+				else if (datapercent < 15) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1240);
+				}
+				else if (datapercent < 20) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1230);
+				}
+				else if (datapercent < 25) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1200);
+				}
+				else if (datapercent < 30) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1070);
+				}
+				else if (datapercent < 35) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1040);
+				}
+				else if (datapercent < 40) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 1010);
+				}
+				else if (datapercent < 45) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 980);
+				}
+				else if (datapercent < 50) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 950);
+				}
+				else if (datapercent < 55) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 920);
+				}
+				else if (datapercent < 60) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 890);
+				}
+				else if (datapercent < 65) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 860);
+				}
+				else if (datapercent < 70) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 830);
+				}
+				else if (datapercent < 75) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 800);
+				}
+				else if (datapercent < 80) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 770);
+				}
+				else if (datapercent < 85) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 740);
+				}
+				else if (datapercent < 90) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 710);
+				}
+				else if (datapercent < 95) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 680);
+				}
+				else if (datapercent < 100) {
+					$('#proceee_scan-results_' + j + ' .overlay_svg path').attr('stroke-dasharray', 650);
+				}
+			}
+		});
+		$(".dropdown-menu a").click(function () {
+			var selText = $(this).text();
+			$(this).parents('.dropup').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+		});
+		$(".team-right ul li").click(function () {
+			$(".team-right ul li")
+				.not(this)
+				.removeClass("active");
+			$(this).addClass("active");
+		});
+
+		$(".sorting-circle").click(function () {
+			$(this).toggleClass("sorting-active");
+		});
+		$(".levellist").click(function () {
+			$(this).toggleClass("active");
+		});
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+
+		$(document).ready(function () {
+			$('.get_file_data').mCustomScrollbar({
+				theme: "dark-3",
+			});
+			$('#jstree1').jstree({
+				"core": {
+					"themes": {
+						"icons": false
+					}
+				},
+				'plugins': ["wholerow", "checkbox"]
+			});
+		});
+
+
+		$(document).ready(function () {
+			$(".scan-table tbody tr").dblclick(function () {
+				$(this).toggleClass("tr_red");
+			});
+			$.singleDoubleClick = function (singleClk, doubleClk) {
+				return (function () {
+					var alreadyclicked = false;
+					var alreadyclickedTimeout;
+
+					return function (e) {
+						if (alreadyclicked) {
+							// double
+							alreadyclicked = false;
+							alreadyclickedTimeout && clearTimeout(alreadyclickedTimeout);
+							doubleClk && doubleClk(e);
+						} else {
+							// single
+							alreadyclicked = true;
+							alreadyclickedTimeout = setTimeout(function () {
+								alreadyclicked = false;
+								singleClk && singleClk(e);
+							}, 300);
+						}
+					};
+				})();
+			};
+
+			$(".scan-table tbody tr").bind(
+				"click",
+				$.singleDoubleClick(
+					function (e) {
+						//window.location.href = "triage-1.html";
+
+						//console.log("Singe Click");
+					},
+					function (e) {
+						//console.log("Double Click");
+						$(this).toggleClass("tr_red");
+						//window.location.href = "triage-1.html";
+					}
+				)
+			);
+
+		});
+
+		document.querySelector('.sweet-5').onclick = function () {
+			swal({
+				title: "邮件发送成功",
+				confirmButtonText: '好的',
+				imageUrl: "https://dev.nexuslink.in/xcalibyte-scan_HTML/full/images/svg/email-send-popup.svg"
+			});
+		};
+
+
+		$(".level-accordian > .level-acc-list > h5").click(function () {
+			$('.activelist').not(this).removeClass('activelist').next().hide(300);
+			$(this).toggleClass('activelist');
+			if (false == $(this).next().is(':visible')) {
+				$('.level-accordian > ul').slideUp(300);
+			}
+			$(this).next().slideToggle(300);
+		});
+
+		var animationIsOff = $.fx.off;
+		$.fx.off = true;
+		$('.level-accordian > .level-acc-list > h5:eq(3)').click()
+		$.fx.off = animationIsOff;
+
+		$(document).ready(function () {
+			$('.scan-selection select:not(.ignore)').niceSelect();
+			$('.compliance_selection .selection-box ').niceSelect();
+			$('.com-top-selection .selection-box,.defect-per-select .selection-box').niceSelect();
+		});
+		$(document).ready(function () {
+			$('.risk-assessment ul li').click(function () {
+				$(this).toggleClass("selectefilter");
+			});
+			$('.toggle-defect-type ul li').click(function () {
+				$(this).toggleClass("selectefilter");
+			});
+
+
+			$(".leveltogglelist-xcalibyte ul.toggle-ul li").click(function () {
+				$(".leveltogglelist-xcalibyte ul.toggle-ul li")
+					.not(this)
+					.removeClass("active");
+				$(this).addClass("active");
+			});
+			$(".level-acc-list ul.toggle-ul li").click(function () {
+				$(".level-acc-list ul.toggle-ul li")
+					.not(this)
+					.removeClass("active");
+				$(this).addClass("active");
+			});
+
+		});
+		$(document).ready(function () {
+			$('.scan-dropdown-menu-scroll,.table-selection2 ul.list').mCustomScrollbar({
+				theme: "dark-3",
+			});
+			$(".team-right-scroll").mCustomScrollbar({
+				theme: "dark-3",
+				scrollbarPosition: "outside",
+			});
+			$('.get_file_data').mCustomScrollbar({
+				theme: "dark-3",
+				//scrollbarPosition:"outside"    	    
+			});
+		});
+		/* script for toggle div*/
+		$(document).ready(function () {
+			// $('.leveltogglelist h5').click(function(e) {
+			//     $(e.target).next('ul.toggle-defect').siblings('ul.toggle-defect').slideUp('fast');
+			//     $(e.target).next('ul.toggle-defect').slideToggle('fast');
+			//     $(e.target).next(this).toggleClass('activelist');
+			// });
+
+			$(".compliance h5").click(function () {
+				$(".compliance .nice-select").toggleClass("open");
+			});
+		});
+		$(document).ready(function () {
+
+			function setCheck(o, c) {
+				o.prop("checked", c);
+				if (c) {
+					o.closest("tr").addClass("checked");
+				} else {
+					o.closest("tr").removeClass("checked");
+				}
+			}
+
+			function setCheckAll(o, c) {
+				o.each(function () {
+					setCheck($(this), c);
+				});
+				if (c) {
+					$(".check_all").prop("title", "Check All");
+				} else {
+					$(".check_all").prop("title", "Uncheck All");
+				}
+			}
+
+			$(".check_all").on('change', function () {
+				setCheckAll($("tbody input[type='checkbox']"), $(this).prop("checked"));
+			});
+			$("tbody tr").on("click", function (e) {
+				var chk = $("[type='checkbox']", this);
+				setCheck(chk, !$(this).hasClass("checked"));
+			});
+		});
+
+
+		$(document).ready(function () {
+			$.contextMenu({
+				selector: '.scan-table table tbody tr',
+				callback: function (key, options) {
+					var m = "clicked: " + key;
+				},
+				items: {
+					"Admin": { name: "Admin" },
+					"anne_lee": { name: "Ann Lee" },
+					"dexter_chan": { name: "Dexter Chan" },
+					"sun_chow": { name: "Sun Chow" },
+					"Admin2": { name: "Admin" },
+					"anne_lee2": { name: "Ann Lee" },
+					"dexter_chan2": { name: "Dexter Chan" },
+					"sun_chow2": { name: "Sun Chow" },
+				}
+			});
+		});
+
+		$(document).ready(function () {
+			var tdlist = $(".scan-table tbody tr").length
+			for (i = 1; i <= tdlist; i++) {
+				filelisting = $(".file-listing").outerWidth();
+				filename = $(".file_name_" + i).outerWidth();
+				filepath = $(".file_path_" + i).outerWidth();
+				pathwidth = filename + filepath
+
+				if (filelisting < pathwidth) {
+					if (filepath < filename) {
+						$(".scan-table tr td span.file_name_" + i).css({
+							width: (filename + "px")
+						});
+					}
+					else if (filepath > filename) {
+						$(".scan-table tr td span.file_path_" + i).css({
+							width: "calc(100% - " + filename + "px)"
+						});
+					}
+				}
+				else if (filelisting > pathwidth) {
+					if (filepath < filename) {
+						$(".scan-table tr td span.file_name_" + i).css({
+							width: (filename + "px")
+						});
+					}
+				}
+			}
+
+
+
+		});
+
+
+		$(document).ready(function () {
+
+			var d = $('#speed_2').text();
+			AnimateRotate(d);
+
+			function AnimateRotate(d) {
+
+
+				$('.hand').animate({ deg: d }, {
+					duration: 1750,
+					easing: 'linear',
+					step: function (now) {
+						now = d;
+						$('.hand').css('-webkit-transform', 'rotate(' + (now) + 'deg)');
+					},
+					complete: function () {
+						play('spin');
+					}
+				});
+			}
+
+
+
+			//play('spin');
+			count = $('#speed_2').text();
+			// alert(count);
+			count_2 = parseInt(count) + parseInt(6);
+			//alert(count_2);
+			count_3 = parseInt(count) - parseInt(6);
+			//alert(count_3);
+			count_4 = parseInt(count) + parseInt(3);
+			// alert(count_4);
+			count_5 = parseInt(count) - parseInt(3);
+			//alert(count_5);
+
+			$.keyframe.define([{
+				name: 'rotate_arrow',
+				'0%': {
+					'transform': 'rotate(' + count + 'deg)',
+					'-webkit-transform': 'rotate(' + count + 'deg)',
+					'-moz-transform': 'rotate(' + count + 'deg)'
+				},
+				'20%': {
+					'transform': 'rotate(' + count_2 + 'deg)',
+					'-webkit-transform': 'rotate(' + count_2 + 'deg)',
+					'-moz-transform': 'rotate(' + count_2 + 'deg)'
+				},
+				'40%': {
+					'transform': 'rotate(' + count_3 + 'deg)',
+					'-webkit-transform': 'rotate(' + count_3 + 'deg)',
+					'-moz-transform': 'rotate(' + count_3 + 'deg)'
+				},
+				'60%': {
+					'transform': 'rotate(' + count_4 + 'deg)',
+					'-webkit-transform': 'rotate(' + count_4 + 'deg)',
+					'-moz-transform': 'rotate(' + count_4 + 'deg)'
+				},
+				'80%': {
+					'transform': 'rotate(' + count_5 + 'deg)',
+					'-webkit-transform': 'rotate(' + count_5 + 'deg)',
+					'-moz-transform': 'rotate(' + count_5 + 'deg)'
+				},
+				'100%': {
+					'transform': 'rotate(' + count + 'deg)',
+					'-webkit-transform': 'rotate(' + count + 'deg)',
+					'-moz-transform': 'rotate(' + count + 'deg)'
+				}
+			}]);
+		});
+		function play(animation) {
+			$('.hand').resetKeyframe(function () {
+				switch (animation) {
+					case 'spin':
+						$('.hand').playKeyframe({
+							name: 'rotate_arrow',
+							duration: "2s",
+							iterationCount: 1
+						});
+						break;
+
+				}
+			})
+		}
+
+		$(window).resize(function() {
+	  		levelheight();
+	   	});		
+		$(document).ready(function () {
+			levelheight();
+			function levelheight() {
+				var mainheight = $(".scanning-right").height();
+				var h6_height = $(".leveltogglelist h6").outerHeight();				
+				var acc1_height = $("#accordian_1").outerHeight();
+				var acc2_height = $("#accordian_2").outerHeight();
+				var acc3_height = $("#accordian_3 .toggle-defect-type").outerHeight();
+				var finalheight = parseFloat(mainheight) - parseFloat(h6_height) - parseFloat(acc1_height) - parseFloat(acc2_height) - parseFloat(acc3_height);
+				console.log(finalheight);
+				$(".leveltogglelist .toggle-ul").css("max-height", finalheight + "px");
+				$('.scroll').mCustomScrollbar({
+					theme: "dark-3",
+				});
+				$("#accordian_3 .toggle-defect-type").click();
+			}
+		});
+	</script>
+</body>
+
+</html>

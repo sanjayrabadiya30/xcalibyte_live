@@ -1,0 +1,192 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="../images/favicon.png" />
+<title>XCalibyte</title>
+<link href="../css/bootstrap.css" rel="stylesheet" />
+<link href="../css/font-awesome.min.css" rel="stylesheet" />
+<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<link href="../css/style.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.selectionBox.js"></script>
+<script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../js/custom.js"></script>
+</head>
+
+<body class="chinese ">
+<div class="main-content solid-bg">
+  <div class="main-wrapper">
+    <div class="container"> 
+      <!-- Navigation header -->
+      
+      <header class="header"> 
+        <!-- Left logo section -->
+        <div class="header-logo"> <a href="login.html" title="XCalibyte"><img src="../images/xcalscan-logo-chinese.svg" title="xcal-scan" alt="xcal-scan" /></a> </div>
+        <div class="head-center header-menu d-flex flex-row align-items-end  justify-content-end">
+          <a href="user-profile.html"><img src="../images/icon/user-circle.png" title="Profile" alt="Profile"><span>Admin</span></a>              
+          <a href="login.html" title="Logout"><img src="../images/icon/logout-circle.png" title="Logout" alt="Logout" /></a>
+          <a href="contact.html" title="Contact"><img src="../images/icon/support-circle.png" title="Contact" alt="Contact" /></a>
+        </div>
+        <div class="clearfix"></div>
+      </header>
+      <section class="main-section"> 
+        <!-- Left sidebar menu -->
+        <button class="left-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <div class="sidebar">          
+          <div class="menu top-menu">
+            <ul>
+              <li> 
+                <a href="new-project.html" title="New Projects"><div class="head-right-icon"><img src="../images/icon/new-project-plus.png" title="Projects" alt="New Project" /></div><span>新建项目</span></a> 
+              </li>
+              <li> 
+                <a href="dashboard.html" title="My Projects"><div class="head-right-icon"><img src="../images/icon/my-projects-circle.png" title="Projects" alt="Projects" /></div><span>我的项目</span></a> 
+              </li>
+              <li class="dropdown-sub-menu">        
+                <a href="JavaScript:Void();"><div class="head-right-icon"><img src="../images/icon/setting-circle.png" title="Administration" alt="Administration" /></div><span>管理</span></a>
+                <div class="submenu mt-auto">
+                  <a href="administration-2.html" title="License">证书管理</a>
+                  <a href="user-management.html" title="User Managament">用户管理</a>
+                  <a href="email-server-configuration.html" title="Email Server">邮件设置</a>
+                </div>
+              </li> 
+            </ul>
+          </div>
+          <!-- Copyright text-->
+          <div class="copyright-sidebar">            
+            <p>鉴释 <span>Xcalscan -0.1</span> 版本</p>
+            <p>所有产品权益属于鉴释，</p>
+            <p>如未经许可，请勿擅自复制与转发。</p>
+          </div>
+        </div>
+        <div class="sidebar-data"> 
+          <!-- Large white box content start-->
+          <div class="middle-content full-width-middle-content">
+            <div class="inner-container"> 
+              <!-- Main title with icon image-->
+              <div class="signin-form-head text-center"> <img src="../images/icon/create-new-preset.png" class="big-icon" title="create new preset" alt="create new preset" />
+                <h2>创建模板</h2>
+              </div>
+              <div class="fix-width-container">
+                <div class="projects-form board-left-part create-new-preset-left-part">
+                  <form action="#" method="post">
+                    
+                    <!-- Project name input field-->
+                    <div class="input-group">
+                      <div class="input-group-prepend"> <span class="input-group-text"><img src="../images/icon/project-icon.png" title="Preset Name" alt="Preset Name"></span> </div>
+                      <input type="text" class="input-field form-control" placeholder="模板名称"  name="p_name">
+                    </div>
+                    <!-- Project key input field-->
+                    
+                    <div class="input-group">
+                      <div class="input-group-prepend"> <span class="input-group-text"><img src="../images/icon/source-code-path.png"  title="Source code path" alt="Source code path"></span> </div>
+                      <input type="text" class="input-field form-control" placeholder="源代码路径"  name="Source_code_path">
+                      <label class="optional">可选的</label>
+                    </div>
+                    <div class="input-group select-input-group preset-new-dropdown">
+                      <div class="input-group-prepend "> <span class="input-group-text"><img src="../images/icon/relative-path.png" class="relative-path-image" title="Preset" alt="Preset"></span> </div>
+                      <input type="text" class="input-field form-control" placeholder="Build文件路径"  name="build_file_path">
+                      
+                    </div>
+                    
+                    
+                  </form>
+                </div>
+                <div class="board-right-part create-new-preset-right-part">                  
+                  <!-- Textarea field for configuration detail-->
+                  <div class="input-group textarea-group project-textarea">
+                    <div class="input-group-prepend "> <span class="input-group-text"><img src="../images/icon/setting.png" title="settings" alt="settings"></span> </div>
+                    <span class="label-title text-uppercase label-configurtion">其他设置</span>
+                    <div class="content">
+                      <div class="textarea-wrapper">
+                        <textarea></textarea>
+                        <div class="textarea-clone"></div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <!-- Textarea field for configuration detail-->
+                  
+                  
+                  <!-- Confirmation button to start scan -->
+                  <div class="form-btn d-flex flex-row justify-content-end">
+                      <button type="submit" title="Save" class="btn btn-red btn-save-project text-center">保存</button>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Large white box content start--> 
+        </div>
+        <div class="clearfix"></div>
+      </section>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<script> 
+/* Custom selection box script */
+
+$(document).ready(function() {
+  $('.language-select,.select-input-group select:not(.ignore)').niceSelect();      
+  
+}); 
+(function($){
+  $(window).on("load",function(){
+    
+    var textareaLineHeight=parseInt($(".textarea-wrapper textarea").css("line-height"));
+    
+    $(".textarea-wrapper").mCustomScrollbar({
+      scrollInertia:0,
+      theme:"dark-3",
+      advanced:{autoScrollOnFocus:false},
+      mouseWheel:{disableOver:["select","option","keygen","datalist",""]},
+      keyboard:{enable:false},
+      snapAmount:textareaLineHeight,
+    mouseWheelPixels: 20
+    });
+    
+    var textarea=$(".textarea-wrapper textarea"),textareaWrapper=$(".textarea-wrapper"),textareaClone=$(".textarea-wrapper .textarea-clone");
+    
+    textarea.bind("keyup keydown",function(e){
+      var $this=$(this),textareaContent=$this.val(),clength=textareaContent.length,cursorPosition=textarea.getCursorPosition();
+      textareaContent="<span>"+textareaContent.substr(0,cursorPosition)+"</span>"+textareaContent.substr(cursorPosition,textareaContent.length);
+      textareaContent=textareaContent.replace(/\n/g,"<br />");
+          textareaClone.html(textareaContent+"<br />");
+          $this.css("height",textareaClone.height());
+      var textareaCloneSpan=textareaClone.children("span"),textareaCloneSpanOffset=0,
+        viewLimitBottom=(parseInt(textareaClone.css("min-height")))-textareaCloneSpanOffset,viewLimitTop=textareaCloneSpanOffset,
+        viewRatio=Math.round(textareaCloneSpan.height()+textareaWrapper.find(".mCSB_container").position().top);
+      if(viewRatio>viewLimitBottom || viewRatio<viewLimitTop){
+        if((textareaCloneSpan.height()-textareaCloneSpanOffset)>0){
+          textareaWrapper.mCustomScrollbar("scrollTo",textareaCloneSpan.height()-textareaCloneSpanOffset-textareaLineHeight);
+        }else{
+          textareaWrapper.mCustomScrollbar("scrollTo","top");
+        }
+      }
+    });
+      
+    $.fn.getCursorPosition=function(){
+      var el=$(this).get(0),pos=0;
+      if("selectionStart" in el){
+        pos=el.selectionStart;
+      }else if("selection" in document){
+        el.focus();
+        var sel=document.selection.createRange(),selLength=document.selection.createRange().text.length;
+        sel.moveStart("character",-el.value.length);
+        pos=sel.text.length-selLength;
+      }
+      return pos;
+    }    
+  });
+})(jQuery);
+</script>
+</body>
+</html>

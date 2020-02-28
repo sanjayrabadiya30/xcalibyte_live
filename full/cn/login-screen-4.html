@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="../images/favicon.png" />
+<title>XCalibyte</title>
+<link href="../css/bootstrap.css" rel="stylesheet" />
+<link href="../css/font-awesome.min.css" rel="stylesheet" />
+<link href="../css/style.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/custom.js"></script>
+</head>
+
+<body class="chinese ">
+<div class="main-content solid-bg administration-2-page">
+  <div class="main-wrapper">
+    <div class="container"> 
+      <!-- Navigation header -->
+      <header class="header"> 
+        <!-- Left logo section -->
+        <div class="header-logo"> <a href="login.html" title="XCalibyte"><img src="../images/xcalscan-logo-chinese.svg" title="xcal-scan" alt="xcal-scan" /></a> </div>
+        
+        
+        <div class="clearfix"></div>
+      </header>
+      <section class="main-section login-main-section"> 
+        <!-- Left sidebar menu -->        
+        <div class="sidebar-data login-sidebar-right"> 
+          <!-- Large white box content start-->
+          <div class="scanning-middle-content d-flex flex-row justify-content-between">
+            <div class="login-left-box">
+              <div class="btn-login-back">
+                <a href="login-screen-3.html" title="Back"><img src="../images/icon/login-back-icon.jpg" title="Back" alt="login-back-icon" /></a>
+              </div>
+              <div class="inner-container admin-screen">
+                  <!-- Main title with icon image-->
+                  <div class="signin-form-head login-form-head text-center"> 
+                    <h4>2</h4>                     
+                    <h2>邮件服务配置</h2>
+                    <p>配置邮件服务后，在指派任务和扫描报告生成后，您将收到自动邮件通知</p>                    
+                  </div>
+                  <div class="email-login-form text-center">
+                    <form action="#" method="post">               
+                      <div class="input-group">
+                        <div class="input-group-prepend"> <span class="input-group-text"><img src="../images/icon/server-address.png" title="SERVER ADDRESS" alt="SERVER ADDRESS"></span> </div>
+                        <input type="text" class="input-field form-control" placeholder="服务器地址"  name="name">
+                      </div>
+                      <div class="smtp-connection-both d-flex">
+                        <div class="smatp-field wrap-div disable-group smat">
+                          <div class="input-group checkbox-wrap smtp-check">
+                            <div class="input-group-prepend"> <span class="input-group-text"></span> </div>
+                            <input type="checkbox" class="common-checkbox" id="admin-check" checked="checked" />
+                            <label class="input-field form-control admin-label" for="admin-check"><div class="administratorbg"><div class="administrator-image"></div></div>SMTP</label>
+                          </div>
+                        </div>
+                        <div class="ssl-connection-field wrap-div disable-group"> 
+                          <!-- Administrator label with checkbox data start-->
+                          <div class="input-group checkbox-wrap right-check ssl-connection-check">
+                            <div class="input-group-prepend"> <span class="input-group-text"></span> </div>
+                            <input type="checkbox" class="common-checkbox" id="admin-check2" checked="checked" />
+                            <label class="input-field form-control admin-label" for="admin-check2"><div class="administratorbg"><div class="administrator-image"></div></div>使用<small>SSL</small>连接</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <div class="input-group-prepend"> <span class="input-group-text"><img src="../images/icon/server-port.png" title="SERVER PORT" alt="SERVER PORT"></span> </div>
+                        <input type="text" class="input-field form-control" placeholder="服务端口"  name="name">
+                      </div>
+                      <div class="input-group">
+                        <div class="input-group-prepend"> <span class="input-group-text"><img src="../images/icon/user.png" title="From" alt="from"></span> </div>
+                        <input type="text" class="input-field form-control" placeholder="发件人"  name="from">
+                      </div>
+                      <!-- Name input field -->
+                      <div class="input-group">
+                        <div class="input-group-prepend"> <span class="input-group-text"><img src="../images/icon/email.png" title="Email" alt="email icon"></span> </div>
+                        <input type="text" class="input-field form-control" placeholder="邮件地址"  name="email">
+                      </div>
+                      <!-- New password input field -->
+                      <div class="input-group">
+                        <div class="input-group-prepend"> <span class="input-group-text"><img src="../images/icon/password.png" title="password" alt="password"></span> </div>
+                        <input id="password" type="password" class="input-field form-control" placeholder="密码" name="password" value="">
+                      </div>
+                      <!-- Confirm password input field -->
+                      
+                      <div class="input-group">
+                        <div class="input-group-prepend"> <span class="input-group-text"><img src="../images/icon/emial-prefix.png" title="Email Prefix" alt="email Prefix"></span> </div>
+                        <input type="text" class="input-field form-control" placeholder="邮件标题前缀"  name="name">                        
+                      </div>
+                      <button type="button" title="Next" onclick="location.href = 'login-screen-5.html';" class="btn btn-red email-server-btn text-center">下一步</button>
+                                  
+                    </form>
+                  </div>
+                  <div class="login-massage login-email-massage">
+                    <p class="gray-txt"><a href="login-screen-5.html">跳过，稍后配置</a></p>                  
+                  </div>
+                  
+              </div>
+            </div>
+            <!-- Process list  step completd  class name  "completed-stap" in for the use -->
+            <div class="login-right-list">
+              <ul>
+                <li class="completed-stap" >第<small>1</small>步<span>导入证书</span> <div class="check-image"><img src="../images/icon/red-check.png" /></li>
+                <li>第<small>2</small>步<span>邮件配置</span> <div class="check-image"><img src="../images/icon/red-check.png" /></li>
+                <li>第<small>3</small>步<div class="check-image"><img src="../images/icon/red-check.png" /></li>                
+              </ul>
+            </div>
+          </div>    
+          <!-- Large white box content end--> 
+        </div>
+        <div class="clearfix"></div>
+      </section>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+
+</script>
+</body>
+</html>

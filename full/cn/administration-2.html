@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="../images/favicon.png" />
+<title>XCalibyte</title>
+<link href="../css/bootstrap.css" rel="stylesheet" />
+<link href="../css/font-awesome.min.css" rel="stylesheet" />
+<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<link href="../css/sweetalert.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/D9D23587-6D33-F94F-895B-E1B96B91B441/main.js" charset="UTF-8"></script><script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="../js/sweetalert.js"></script>
+<script type="text/javascript" src="../js/custom.js"></script>
+</head>
+
+<body class="chinese ">
+<div class="main-content solid-bg administration-2-page">
+  <div class="main-wrapper">
+    <div class="container"> 
+      <!-- Navigation header -->
+      <header class="header"> 
+        <!-- Left logo section -->
+        <div class="header-logo"> <a href="login.html" title="XCalibyte"><img src="../images/xcalscan-logo-chinese.svg" title="xcal-scan" alt="xcal-scan" /></a> </div>
+        <div class="head-center header-menu d-flex flex-row align-items-end  justify-content-end">
+          <a href="user-profile.html"><img src="../images/icon/user-circle.png" title="Profile" alt="Profile"><span>Admin</span></a>              
+          <a href="login.html" title="Logout"><img src="../images/icon/logout-circle.png" title="Logout" alt="Logout" /></a>
+          <a href="contact.html" title="Contact"><img src="../images/icon/support-circle.png" title="Contact" alt="Contact" /></a>
+        </div>
+        <div class="clearfix"></div>
+      </header>
+      <section class="main-section"> 
+        <button class="left-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <div class="sidebar">          
+          <div class="menu top-menu">
+            <ul>
+              <li> 
+                <a href="new-project.html" title="New Projects"><div class="head-right-icon"><img src="../images/icon/new-project-plus.png" title="Projects" alt="New Project" /></div><span>新建项目</span></a> 
+              </li>
+              <li> 
+                <a href="dashboard.html" title="My Projects"><div class="head-right-icon"><img src="../images/icon/my-projects-circle.png" title="Projects" alt="Projects" /></div><span>我的项目</span></a> 
+              </li>
+              <li class="dropdown-sub-menu">        
+                <a href="JavaScript:Void();"><div class="head-right-icon"><img src="../images/icon/setting-circle.png" title="Administration" alt="Administration" /></div><span>管理</span></a>
+                <div class="submenu mt-auto">
+                  <a href="administration-2.html" title="License">证书管理</a>
+                  <a href="user-management.html" title="User Managament">用户管理</a>
+                  <a href="email-server-configuration.html" title="Email Server">邮件设置</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Copyright text-->
+          <div class="copyright-sidebar">            
+            <p>鉴释 <span>Xcalscan -0.1</span> 版本</p>
+            <p>所有产品权益属于鉴释，</p>
+            <p>如未经许可，请勿擅自复制与转发。</p>
+          </div>
+        </div>
+        <div class="sidebar-data"> 
+          <!-- Large white box content start-->
+          <div class="middle-content">
+            <div class="inner-container admin-screen">
+             
+              <!-- Main title with icon image-->
+              <div class="signin-form-head text-center"> <img src="../images/svg/administration.svg" class="big-icon" alt="administration icon">
+                <h2>管理</h2>
+              </div>
+              <div class="box-inner-container">
+                <div class="license-upload-div administration-2-top administration-2-top3 ">
+                  <div class="box-left">
+                    <label class="ad-label">许可证:</label>
+                  </div>
+                  <div class="box-right">
+                    <div class="license-detail d-flex flex-row justify-content-between">
+                      <div class="admin-left">
+                        <span>公司名称:</span>
+                        <strong>XC5 Software Tech Limited</strong>
+                      </div>
+                      <div class="admin-center">                          
+                        <div class="admin-center-top">
+                          <span>证书编号:</span>
+                          <strong>a8239xiusid29239</strong>
+                        </div>
+                        <div class="admin-center-bottom">
+                          <span>有效期:  </span><strong>31/12/2020</strong>
+                        </div>                     
+                      </div>
+                      <div class="admin-right">                         
+                       <button type="submit" title="Update License" class="btn btn-gray btn-update-license text-center">更新许可证</button>
+                        <div class="admin-right-bottom">
+                          <span>用户: </span><strong>6/10</strong>
+                        </div>                           
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>                        
+                </div> 
+              </div>
+            </div>            
+          </div>
+          <!-- Large white box content end--> 
+        </div>
+        <div class="clearfix"></div>
+      </section>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+document.querySelector('.sweet-5').onclick = function(){
+  swal({
+    title: "确认操作？",
+    text: "此操作无法恢复！",
+    type: "warning",
+    showCancelButton: true,    
+    confirmButtonClass: 'btn-danger',
+    confirmButtonText: '是的，删除！',
+    cancelButtonText: "取消",
+    closeOnConfirm: false,
+    closeOnCancel: true
+  },
+  function(isConfirm){
+    if (isConfirm){
+      swal({
+        title: "删除 !",
+        text: "用户已删除.",
+        type: "success",
+        confirmButtonText: '好的'
+      });      
+    }
+  });
+};
+
+$(document).ready(function(){ 
+  $('.user-listing').mCustomScrollbar({
+      theme:"dark-3",       
+  });
+});
+</script>
+</body>
+</html>

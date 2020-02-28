@@ -1,0 +1,272 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../images/favicon.png" />
+  <title>XCalibyte</title>
+  <link href="../css/bootstrap.css" rel="stylesheet" />
+  <link href="../css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+  <script type="text/javascript" src="../js/custom.js"></script>
+</head>
+
+<body class="chinese ">
+  <div class="main-content solid-bg scanning-progress-page">
+    <div class="main-wrapper">
+      <!--header-section -->
+      <div class="container">
+        <header class="header">
+          <!-- Left logo section -->
+          <div class="header-logo"> <a href="login.html" title="XCalibyte"><img
+                src="../images/xcalscan-logo-chinese.svg" title="xcal-scan" alt="xcal-scan" /></a> </div>
+          <div class="head-center header-menu d-flex flex-row align-items-end  justify-content-end">
+            <a href="user-profile.html"><img src="../images/icon/user-circle.png" title="Profile"
+                alt="Profile"><span>Admin</span></a>
+            <a href="login.html" title="Logout"><img src="../images/icon/logout-circle.png" title="Logout"
+                alt="Logout" /></a>
+            <a href="contact.html" title="Contact"><img src="../images/icon/support-circle.png" title="Contact"
+                alt="Contact" /></a>
+          </div>
+          <div class="clearfix"></div>
+        </header>
+        <section class="main-section">
+          <!-- sidebar navigation -->
+          <button class="left-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          <div class="sidebar">
+            <div class="menu top-menu">
+              <ul>
+                <li>
+                  <a href="new-project.html" title="New Projects">
+                    <div class="head-right-icon"><img src="../images/icon/new-project-plus.png" title="Projects"
+                        alt="New Project" /></div><span>新建项目</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="dashboard.html" title="My Projects">
+                    <div class="head-right-icon"><img src="../images/icon/my-projects-circle.png" title="Projects"
+                        alt="Projects" /></div><span>我的项目</span>
+                  </a>
+                </li>
+                <li class="dropdown-sub-menu">
+                  <a href="JavaScript:Void();">
+                    <div class="head-right-icon"><img src="../images/icon/setting-circle.png" title="Administration"
+                        alt="Administration" /></div><span>管理</span>
+                  </a>
+                  <div class="submenu mt-auto">
+                    <a href="administration-2.html" title="License">证书管理</a>
+                    <a href="user-management.html" title="User Managament">用户管理</a>
+                    <a href="email-server-configuration.html" title="Email Server">邮件设置</a>
+                  </div>
+                </li>
+
+
+              </ul>
+            </div>
+            <!-- Copyright text-->
+            <div class="copyright-sidebar">
+              <p>鉴释 <span>Xcalscan -0.1</span> 版本</p>
+              <p>所有产品权益属于鉴释，</p>
+              <p>如未经许可，请勿擅自复制与转发。</p>
+            </div>
+          </div>
+          <div class="sidebar-data">
+            <!-- Large white box content start-->
+            <div class="middle-content full-width-middle-content">
+              <div class="scanning">
+                <!-- Scan information data start-->
+                <div class="scanning-content">
+                  <ul>
+                    <!-- Project name label-->
+                    <li><strong>项目名称</strong> <span>Project 3 (CxOSA)</span> </li>
+                    <!-- Loaction label-->
+                    <li>
+                      <strong>文件位置</strong>
+                      <p>
+                        <span>/view/application/UserControl/view/application/UserControl...</span>
+                        <span>/view/application/UserControl/view/application/UserControl...</span>
+                      </p>
+                    </li>
+                    <li class="process_step">
+                      <div class="process_height">
+                        <p><span class="process-name">Preparing to scan</span></p>
+                        <p><span class="process-name">Fetching code</span> </p>
+                        <p><span class="process-name">Starting prebuild project</span> </p>
+                        <p><span class="process-name">Compressing source code</span> </p>
+                        <p><span class="process-name">Uploading source code to server</span> </p>
+                        <p><span class="process-name">Collecting file information</span></p>
+                        <p><span class="process-name">Getting prescan results</span></p>
+                        <p><span class="process-name">Fetching preprocess information</span></p>
+                        <p><span class="process-name">Scanning queue</span></p>
+                        <p><span class="process-name">Analyzing</span></p>
+                        <p><span class="process-name">Importing results</span></p>
+                        <p><span class="process-name">Generating results file</span></p>
+                        <p><span class="process-name">Scanning success!</span></p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="scan-total scan-total-progress d-flex flex-row justify-content-between">
+                    <div>
+                      <!--Total files count -->
+                      <div class="head-value"><span>文件 数量</span>
+                        <h2>82</h2>
+                      </div>
+                      <!--Total links count -->
+                      <div class="head-value"><span>代码 行数</span>
+                        <h2>9981</h2>
+                      </div>
+                      <div class="head-value  scanning-progress-defect-found">
+                        <span>缺陷 数量</span>
+                        <h2>83</h2>
+                      </div>
+                      <br>
+                      <div class="scan-date datetime-scan-progress">
+                        <p class="d-flex flex-row"><strong>扫描 时间</strong><span>10:28 06/08/2018</span></p>
+
+                      </div>
+                      <div class="head-value scanning-head-value">
+                        <span>扫描 时间</span>
+                        <h2>0:0:58</h2>
+                      </div>
+                      <div class="scanning_for_progress">
+                        <span>扫描选项</span>
+                        <div class="scan_progress_list d-flex">
+                          <strong>CERT</strong>
+                          <strong>XCALIBYTE</strong>
+                          <strong>SPOTBUGS</strong>
+                          <strong>OCLINT</strong>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <!-- Scan information data end-->
+                <!-- Progress circle div start -->
+                <div class="progress-box">
+                  <div class="cover_form">
+                    <div class="third circle"> <strong></strong></div>
+                    <!-- partial:index.partial.html -->
+                    <canvas id="text" width="500" height="100"></canvas>
+                    <div class="vid_cover">
+                      <canvas id="stage"></canvas>
+                    </div>
+                    <form id="form">
+                      <input type="text" id="inputText" value="100%" />
+
+                      <!--   <input type="text" id="inputText" value="100%" /> -->
+                      <input type="submit" value="TRY IT" />
+                    </form>
+                    <div class="display_blockprint" style="display:none">
+                      <div class="textone">100%</div>
+                      <div class="xcaliimg"><img src="../images/cn/logo-3.png"></div>
+                    </div>
+                  </div>
+                  <div class="go-to-results">
+                    <a href="scan-results.html" title="Start Scan"
+                      class="btn btn-red btn-goto-results text-center"><span>查看结果</span><img
+                        src="../images/icon/right-white.png" alt="Re scan" title="Re Scan"></a>
+                  </div>
+                </div>
+
+
+
+                <!-- Progress circle div end -->
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </section>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="../js/circle-progress.min.js"></script>
+  <script type="text/javascript" src="../js/EasePack.min.js"></script>
+  <script type="text/javascript" src="../js/TweenLite.min.js"></script>
+  <script type="text/javascript" src="../js/easeljs-0.7.1.min.js"></script>
+  <script type="text/javascript" src="../js/requestAnimationFrame.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      setInterval(function () {
+        remove_p();
+      }, 600);
+
+      function remove_p() {
+        $('.process_height').children('p:first-child').remove();
+        $('.process_height').children('p').eq(6).removeClass('active');
+        $('.process_height').children('p').eq(6).find(".dot-loader").remove();
+        $('.process_height').children('p').eq(7).addClass('active');
+        $('.process_height').children('p').eq(7).children('span').append("<div class='dot-loader'><span></span><span></span><span></span><span></span></div>");
+      }
+      $('.third.circle').circleProgress({
+        value: 1,
+        size: 300,
+        startAngle: -Math.PI / 2.01,
+        emptyFill: "#cecece",
+        thickness: 8,
+        emptyThickness: 4,
+        animation: {
+          duration: 10000,
+          easing: "circleProgressEasing"
+        },
+        fill: { image: "../images/circle-border.jpg" },
+
+      }).on('circle-animation-progress', function (event, progress, stepValue) {
+        var values = parseFloat(String(stepValue.toFixed(2)).substr(1)) * 100;
+        values = Math.round(values);
+        $(this).find('strong').text(values + "%");
+        $(this).find('strong').text(values + "");
+        //console.log(values);
+        if (values >= 10) {
+          $('.circle strong').addClass('two-digit');
+        }
+        if (values == 99) {
+          $(".scan-total").css("opacity", 1);
+          $(".process_step").css("display", "none");
+          $(".go-to-results").css("opacity", 1);
+          $(".hidemenu").css("opacity", 1);
+          $(".gif-1").css("display", "block");
+          $(".circles").css("display", "none");
+          $('input[type="submit"]').click();
+          $('#text').fadeOut(100);
+          setTimeout(function () {
+            $('.vid_cover').fadeOut("slow");
+            setTimeout(function () {
+              $('.display_blockprint').fadeIn("slow");
+            }, 50);
+          }, 550);
+
+          // var videocontainer = document.getElementById("vid");
+          // var videosource = document.getElementById("vid");
+          // var newmp4 = "../demo/progress-2.gif";
+
+          //videocontainer.pause();
+          //videosource.setAttribute("src", newmp4);
+          // videocontainer.load();
+          //videocontainer.play();
+          // videocontainer.loop = false;
+          $(this).find('strong').hide();
+        }
+      });
+
+      $('.scroll').mCustomScrollbar({
+        theme: "dark-3",
+        setHeight: 170,
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/favicon.png" />
+<title>XCalibyte</title>
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/font-awesome.min.css" rel="stylesheet" />
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet">
+<link href="css/style-1.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+<div class="main-content solid-bg administration-2-page">
+  <div class="main-wrapper">
+    <div class="container"> 
+      <!-- Navigation header -->
+      <header class="header"> 
+        <!-- Left logo section -->
+        <div class="header-logo"> <a href="login.html" title="XCalibyte"><img src="images/xcal-scan-black.png" title="xcal-scan" alt="xcal-scan" /></a> </div>
+        
+        
+        <div class="clearfix"></div>
+      </header>
+      <section class="main-section login-main-section"> 
+        <!-- Left sidebar menu -->        
+        <div class="sidebar-data login-sidebar-right"> 
+          <!-- Large white box content start-->
+          <div class="scanning-middle-content d-flex flex-row justify-content-between">
+            <div class="login-left-box">
+              <div class="btn-login-back">
+                <a href="login-screen-6.html" title="Back"><img src="images/icon/login-back-icon.jpg" title="Back" alt="login-back-icon" /></a>
+              </div>
+              <div class="inner-container admin-screen">
+                  <!-- Main title with icon image-->
+                <div class="signin-form-head login-form-head text-center">
+                  <img src="images/svg/ok-popup.svg" class="big-icon" alt="notification icon">  
+                  <h2>Set up complete.</h2>
+                  <p><small>Xcalscan</small> is ready to use.</p>
+                </div>
+                <div class="btn-other-login text-center">                  
+                  <button type="button" title="Import License" onclick="location.href = 'dashboard.html';" class="btn btn-red text-center">Go to Dashboard</button>
+                </div>
+                                
+              </div>
+            </div>
+            <!-- Process list  step completd  class name  "completed-stap" in for the use -->
+            <div class="login-right-list">
+              <ul>
+                <li class="completed-stap">STEP <small>1</small><span>Import Licence</span> <div class="check-image"><img src="images/icon/red-check.png" /></li>
+                <li class="completed-stap">STEP <small>2</small><span>Set up email server</span> <div class="check-image"><img src="images/icon/red-check.png" /></li>
+                <li class="completed-stap">STEP <small>3</small><span>User Management</span><div class="check-image"><img src="images/icon/red-check.png" /></li>     
+                <li class="completed-stap setup-completed ">SET UP COMPLETE<div class="check-image"><img src="images/icon/red-check.png" /></li>                    
+              </ul>
+            </div>
+          </div>    
+          <!-- Large white box content end--> 
+        </div>
+        <div class="clearfix"></div>
+      </section>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){ 
+    $('.user-member-listing').mCustomScrollbar({
+        theme:"dark-3", 
+        scrollbarPosition:"outside"      
+    });
+  });
+
+$(".dropdown-menu a").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.dropdown').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+});
+
+
+</script>
+</body>
+</html>

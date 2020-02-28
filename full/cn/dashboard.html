@@ -1,0 +1,1196 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../images/favicon.png" />
+  <title>XCalibyte</title>
+  <link href="../css/bootstrap.css" rel="stylesheet" />
+  <link href="../css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.selectionBox.js"></script>
+  <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+  <script type="text/javascript" src="../js/custom.js"></script>
+</head>
+
+<body class="full-page-body chinese ">
+  <div class="main-content solid-bg dashboard-page dashboard-box-page">
+    <div class="main-wrapper">
+      <div class="container">
+        <!-- Navigation header -->
+        <header class="header">
+          <!-- Left logo section -->
+          <div class="header-logo"> <a href="login.html" title="XCalibyte"><img src="../images/xcalscan-logo-chinese.svg"
+                title="xcal-scan" alt="xcal-scan" /></a> </div>
+          <div class="head-center header-menu d-flex flex-row align-items-end  justify-content-end">
+            <a href="user-profile.html"><img src="../images/icon/user-circle.png" title="Profile"
+                alt="Profile"><span>Admin</span></a>
+            <a href="login.html" title="Logout"><img src="../images/icon/logout-circle.png" title="Logout"
+                alt="Logout" /></a>
+            <a href="contact.html" title="Contact"><img src="../images/icon/support-circle.png" title="Contact"
+                alt="Contact" /></a>
+          </div>
+          <div class="clearfix"></div>
+        </header>
+        <section class="main-section">
+          <!-- Left sidebar menu -->
+          <button class="left-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          <div class="sidebar">
+            <div class="menu top-menu">
+              <ul>
+                <li>
+                  <a href="new-project.html" title="New Projects">
+                    <div class="head-right-icon"><img src="../images/icon/new-project-plus.png" title="Projects"
+                        alt="New Project" /></div><span>新建项目</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="dashboard.html" title="My Projects">
+                    <div class="head-right-icon"><img src="../images/icon/my-projects-circle.png" title="Projects"
+                        alt="Projects" /></div><span>我的项目</span>
+                  </a>
+                </li>
+                <li class="dropdown-sub-menu">
+                  <a href="JavaScript:Void();">
+                    <div class="head-right-icon"><img src="../images/icon/setting-circle.png" title="Administration"
+                        alt="Administration" /></div><span>管理</span>
+                  </a>
+                  <div class="submenu mt-auto">
+                    <a href="administration-2.html" title="License">证书管理</a>
+                    <a href="user-management.html" title="User Managament">用户管理</a>
+                    <a href="email-server-configuration.html" title="Email Server">邮件设置</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Copyright text-->
+            <div class="copyright-sidebar">
+              <p>鉴释 <span>Xcalscan -0.1</span> 版本</p>
+              <p>所有产品权益属于鉴释，</p>
+              <p>如未经许可，请勿擅自复制与转发。</p>
+            </div>
+          </div>
+          <div class="sidebar-data">
+            <!-- Top filter option start -->
+            <div class="top-filter d-flex align-items-center justify-content-between">
+
+              <div class="sort-project-option d-flex">
+                <div class="dashnoard-head-left-part d-flex">
+                  <div class="option-div">
+                    <span class="sort-label">显示方式</span>
+                    <a href="javascript:;" class="type-selector active">图标</a>
+                    <a href="dashboard-list.html" class="type-selector">列表</a>
+                  </div>
+                  <div class="option-div">
+                    <span class="sort-label">排序</span>
+                    <a href="javascript:;" class="sort-label up"> 扫描日期</a>
+                    <a href="javascript:;" class="sort-label"> 项目名称</a>
+                  </div>
+                </div>
+                <div class="new_project_drop">
+                  <span>扫描选项</span>
+                  <div class="dropdown">
+                    <button type="button" class="dropdown-toggle" href="#" id="dropdownMenuLink"
+                      data-toggle="dropdown">CERT</button>
+                    <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" data-value="0" href="#">全部</a>
+                      <a class="dropdown-item" data-value="1" href="#">Xcalibyte</a>
+                      <a class="dropdown-item" data-value="2" href="#">CERT</a>                                            
+                      <a class="dropdown-item" data-value="3" href="#">IOT嵌入开发</a>
+                      <a class="dropdown-item" data-value="4" href="#">GDPR</a>   
+                      <a class="dropdown-item" data-value="5" href="#">OCLint</a>
+                      <a class="dropdown-item" data-value="6" href="#">OWASP</a>                                         
+                      <a class="dropdown-item" data-value="7" href="#">定制规则</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search-field dashboard-search"><input type="text" class="search-field-input p-search"
+                  placeholder="搜索项目" />
+                <button class="btn-search"><img src="../images/icon/search-icon.png"></button>
+              </div>
+            </div>
+            <!-- Top filter option end -->
+            <!--- Icon view start -->
+            <div class="icon-scroll-box scroll">
+              <div class="icon-box-list inner-list d-flex">
+                <div class="icon-box show" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>                        
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">443,000</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 80%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 75%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 50%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 40%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box" onclick="pageRedirect();">
+                  <div class="icon-bg">
+                    <div class="project-inner-box row-box">
+                      <a href="project-setting.html" class="dashboard_setting"><img src="../images/icon/setting-red.png"
+                          alt="setting" title="setting" /></a>
+                      <h6>Project Trial phase I</h6>
+                      <ul>
+                        <li><span>扫描 时间</span><strong>00:04:28</strong><strong>7/11/2018</strong>
+                        </li>
+                      </ul>
+                      <ul class="file_line_dashboard_box d-flex">
+                          <li><span>文件</span><strong>21,892</strong></li>
+                          <li><span>行数</span><strong>1892</strong></li>
+                      </ul>
+                     <div class="risk-list justify-content-between">
+                        <span>风险等级</span>
+                        <div class="d-flex ">
+                          <div class="risk-block red ">
+                            <div class="risk-no">高</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block orange">
+                            <div class="risk-no">中</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                          <div class="risk-block blue">
+                            <div class="risk-no">低</div>
+                            <div class="risk-count">119,111</div>
+                          </div>
+                        </div>
+                        <p><span class="span1">高危</span class="span2"><span>18,999</span></p>
+                      </div>
+                      <div class="box-line">
+                        <hr>
+                        <div class="color-line red-line" style="width: 0%;"></div>
+                      </div>
+                      <div class="total-value d-flex flex-row justify-content-between align-items-center">
+                        <strong class="red-txt">442</strong>
+                        <a href="scanning-progress.html" class="re-scan" title="scan">[扫描]</a>
+                        <a href="dashboard.html" class="trash" title="Trash"><img src="../images/icon/del.png"
+                            title="Trash" alt="trash" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+
+            <!--Icon view end-->
+
+            <!-- Current projects listing start-->
+
+            <a href="javascript:;" title="View All Projects" class="view-all-projects">顶部 </a>
+          </div>
+        </section>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $('.total-value .re-scan > img').fadeTo("slow", 1);
+    function pageRedirect() {
+      window.location.href = "https://dev.nexuslink.in/xcalibyte-scan_HTML_liquid/full/cn/scan-results.html";
+    }
+    $(document).ready(function () {
+      $('.com-selector').niceSelect();
+      $('.icon-box').hover(
+        function () { $(this).addClass('show') },
+        function () { $(this).removeClass('show') }
+      )
+    });
+    $(window).on('load', function () {
+      $('.color-line').show('slow');
+      $('.total-value .on-scan > img').fadeTo("slow", 0.43);
+      height = $(".project-box").outerHeight();
+      $('.upload-box').css('height', height);
+    });
+    $(document).ready(function () {
+      set_height();
+      $('.left-menu-icon').click(function () {
+        set_height();
+
+      });
+
+      function set_height() {
+        var tab_height = $(".icon-box-list").height();
+        var matrix = $(".container").css("-webkit-transform");
+        var translate_val = matrix.match(/-?[\d\.]+/g);
+        var container = $(".container").height();
+        if (translate_val !== null) {
+          var maincontainer = parseFloat(container) * parseFloat(translate_val[0]) + parseFloat(100);
+        } else {
+          var maincontainer = container + parseFloat(100);
+        }
+
+        if (tab_height <= 300) {
+          $(".main-wrapper").css("min-height", "100vh");
+        } else if (tab_height >= 300) {
+          if ($(window).height() >= 700) {
+            $(".main-wrapper").css("min-height", maincontainer + "px");
+          } else {
+            $(".main-wrapper").css("min-height", container + "px");
+          }
+        }
+      }
+    });
+    $('.view-all-projects').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 500);
+    });
+
+
+  </script>
+
+</body>
+
+</html>
